@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = Student.new(user_params)
+  	@user = Admin.new(user_params)
   	
   	if @user.save 
   	  flash[:status] = TRUE
