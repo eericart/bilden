@@ -1,47 +1,27 @@
+require 'digest/md5'
+
 class User < ActiveRecord::Base
 
-   require 'digest/md5'
+  before_save { self.email = email.downcase }
+  before_create :create_remember_token
 
-  
-    before_save :encrypt_password
-   
-    validates :email,
-    :presence => TRUE,
-    :uniqueness => TRUE
+  validates :first_name, presence: true, length: { maximum: 50 }
+  VALID_EMAIL_REGEX =/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+  validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
+  has_secure_password
+  validates :password, length: { minimum: 6 }
 
-    validates :first_name,
-    :presence => TRUE,
-    :length => {
-       :minimum => 2,
-       :allow_blank => TRUE
-    }
+  def User.new_remember_token
+    SecureRandom.urlsafe_base64
+  end
 
-    validates :password,
-    :presence => TRUE,
-    :length => {
-        :minimum => 6,
-        :allow_blank => TRUE
-    },
-    :confirmation => TRUE
-    
-    validates :password_confirmation,
-    :presence => TRUE
-    
+  def User.encrypt(token)
+    Digest::MD5.hexdigest(token.to_s)
+  end
 
-   
-	 def encrypt_password
-	    self.password= Digest::MD5.hexdigest(password)
-	 end
+  private
 
-     def self.validate_login(email, password)
-      user = User.find_by_email(email)
-
-      if user && user.password == Digest::MD5.hexdigest(password)
-        user
-      else
-        nil
-       end
+    def create_remember_token
+      self.remember_token = User.encrypt(User.new_remember_token)
     end
-
-
  end
