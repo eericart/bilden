@@ -34,4 +34,4 @@ group :test do
   gem 'capybara', '~>2.2.0'
   gem 'libnotify', '~>0.8.0'
   gem 'shoulda-matchers', require: false
-enda
+end
