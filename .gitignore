@@ -2,6 +2,7 @@
 
 ### Linux ###
 *~
+.fuse*
 
 # KDE directory preferences
 .directory
@@ -41,3 +42,5 @@ config/secrets.yml
 
 #sftp configuration file
 sftp-config.json
+
+*.sqlite3

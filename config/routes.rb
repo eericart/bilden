@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-
   root 'home#index'
+  get 'student/index'
   resources :users
   get '/register' => 'users#new'
 
