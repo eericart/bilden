@@ -1198,3 +1198,230 @@ Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:26:35 -040
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:26:35 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:01 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "user"=>{"first_name"=>"", "last_name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"", "career"=>"", "extra_credits"=>""}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://0.0.0.0:3000/register
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:03 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:09 -0400
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"usuario", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'usuario' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:13 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:18 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:30 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-06 18:28:32 -0400
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-06 18:28:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A4RsLTGSb04jhaDe+9MhmRQgGJDN70dtNaT+14CLWE=", "session"=>{"email"=>"ernest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)

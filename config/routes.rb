@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
 
+  get 'student/index'
+
   resources :users
   get '/register' => 'users#new'
 
