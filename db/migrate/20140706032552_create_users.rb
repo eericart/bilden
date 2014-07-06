@@ -6,8 +6,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password
       t.string :email
       t.string :type
-      t.string :carrera
-      t.integer :credits
+      t.string :career
+      t.integer :extra_credits
 
       t.timestamps
     end
