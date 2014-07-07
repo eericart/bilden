@@ -1,10 +1,19 @@
-<h1>Welcome to bilden app</h1>
-<% if signed_in? %>
-  <%= link_to "logout", signout_path,  method: "delete" %>
+<div class="page-header">
+    <h1>Welcome to Bilden<small>  Your pensum organizer</small></h1>
+</div>
 
-<%else%>
-  <%= link_to "login", signin_path%>
+<div class="btn-group">
+    <% if signed_in? %>
+        <button type="button" class="btn btn-default">  
+            <%= link_to "logout", signout_path,  method: "delete" %>
+        </button>
+    <%else%>
+        <button type="button" class="btn btn-default">
+            <%= link_to "login", signin_path%>
+        </button>
 
-<%end%>
-
-<%= link_to "register", signup_path %>
+    <%end%>
+    <button type="button" class="btn btn-default">
+        <%= link_to "register", signup_path %>
+    </button>
+</div>
