@@ -20648,3 +20648,104 @@ Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-07 11:16:12 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.0ms)
+  Rendered users/new.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (11.2ms)
+  Rendered users/new.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:29 -0400
