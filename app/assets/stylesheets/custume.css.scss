@@ -23,9 +23,18 @@ html {
   overflow-y: scroll;
 }
 
-body div {
+body {
   padding-top: 2em;
   padding-left: 3em;
+}
+
+body div {
+    padding-left: 2em;
+}
+
+.form-control {
+    min-width:255px;
+    max-width:50%;
 }
 
 section {
