@@ -1,4 +1,17 @@
 <% provide(:title, 'Sign up') %>
 
 <h1>Register</h1>
+ <% if  flash[:errors] %>
+  <div class="container">
+    <div class="alert alert-danger">
+      The form contains <%= pluralize( flash[:errors].count, "error") %>.
+    <ul>
+    <%  flash[:errors].each do |msg| %>
+      <li>* <%= msg %></li>
+    <% end %>
+    </ul>
+    </div>
+  </div>
+<% end %>
+
 <%= render 'form'%>
