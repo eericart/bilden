@@ -16,9 +16,9 @@ class UsersController < ApplicationController
   	@user = Student.new(user_params)
 
     if @user.save
-      flash[:status] = TRUE
       flash[:success] = 'Welcome to Bilden App!'
-            redirect_to root_path
+      sign_in @user
+      redirect_to root_path
 
      else
       flash[:errors] = @user.errors.full_messages
