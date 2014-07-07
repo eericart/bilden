@@ -19559,3 +19559,1092 @@ Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 10:53:26 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:53:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:04:46 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-07 11:06:15 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-07 11:06:22 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw=", "session"=>{"email"=>"michael.arias.93@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'michael.arias.93@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3[0m  [["remember_token", "e02538183f12c80bf9d3dc550d62efc9"], ["updated_at", "2014-07-07 15:06:22.733001"]]
+  [1m[35m (115.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms (ActiveRecord: 116.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:06:22 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'e02538183f12c80bf9d3dc550d62efc9' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:22 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:22 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:22 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:06:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'e02538183f12c80bf9d3dc550d62efc9' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:08:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'e02538183f12c80bf9d3dc550d62efc9' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:23 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:24 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'e02538183f12c80bf9d3dc550d62efc9' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3  [["remember_token", "8aa090c11fe1fcf38c7e354e3a0b35e9"], ["updated_at", "2014-07-07 15:10:28.302260"]]
+  [1m[36m (163.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 164.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:28 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-07 11:10:31 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw=", "session"=>{"email"=>"michael.arias.93@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'michael.arias.93@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3[0m  [["remember_token", "35b28df191f892c7999ac8f573c415f3"], ["updated_at", "2014-07-07 15:10:37.301931"]]
+  [1m[35m (168.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 260ms (ActiveRecord: 169.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '35b28df191f892c7999ac8f573c415f3' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:10:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:12:55 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '35b28df191f892c7999ac8f573c415f3' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 3192ms (Views: 3190.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:58 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:12:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:13:31 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '35b28df191f892c7999ac8f573c415f3' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 3231ms (Views: 3229.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:13:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:14:17 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '35b28df191f892c7999ac8f573c415f3' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 3298ms (Views: 3296.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:21 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '35b28df191f892c7999ac8f573c415f3' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3[0m  [["remember_token", "3718d023313982b7134ad9da261550db"], ["updated_at", "2014-07-07 15:14:38.581987"]]
+  [1m[35m (164.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 173ms (ActiveRecord: 165.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:39 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-07 11:14:41 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-07 11:14:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw=", "session"=>{"email"=>"michael.arias.93@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'michael.arias.93@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3  [["remember_token", "edd0f8762be9c65bc47ea38d4c85c362"], ["updated_at", "2014-07-07 15:14:46.913864"]]
+  [1m[36m (209.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 303ms (ActiveRecord: 210.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'edd0f8762be9c65bc47ea38d4c85c362' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:47 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-07 11:14:53 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/tCeHl2AoZBgDvVUVr+jyUfEAJlgcEVOzmyf04vegOw="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'edd0f8762be9c65bc47ea38d4c85c362' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3[0m  [["remember_token", "b49c7576e15b6a34c5869c53331e470c"], ["updated_at", "2014-07-07 15:14:53.669603"]]
+  [1m[35m (161.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 169ms (ActiveRecord: 161.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:14:53 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:53 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:53 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:14:54 -0400

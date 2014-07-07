@@ -7,13 +7,16 @@
         <button type="button" class="btn btn-default">  
             <%= link_to "logout", signout_path,  method: "delete" %>
         </button>
+        <button type="button" class="btn btn-default" id="disabled">
+            register
+        </button>
     <%else%>
         <button type="button" class="btn btn-default">
             <%= link_to "login", signin_path%>
         </button>
+        <button type="button" class="btn btn-default">
+            <%= link_to "register", signup_path %>
+        </button>
 
     <%end%>
-    <button type="button" class="btn btn-default">
-        <%= link_to "register", signup_path %>
-    </button>
 </div>
