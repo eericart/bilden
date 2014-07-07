@@ -1,6 +1,5 @@
-require 'digest/md5'
-
 class User < ActiveRecord::Base
+  require 'digest/md5'
 
   before_save { self.email = email.downcase }
   before_create :create_remember_token

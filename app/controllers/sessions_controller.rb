@@ -2,36 +2,26 @@ class SessionsController < ApplicationController
 
 
   def new
-  	
   end
 
   def create
-  	user =User.validate_login(
-       params[:session][:email],
-       params[:session][:password]
-  	)
-
-    if user
-      session[:user_id] = user.id
-       puts user[:type]
-
-      if user[:type] == 'Admin' 
-      redirect_to 'sessions/new'
-      elsif user[:type] == 'Student' 
-      redirect_to :controller => 'users'
+  	user = User.find_by(email: params[:session][:email].downcase)
+    if user && user.authenticate(params[:session][:password])
+      sign_in user
+      if user[:type] == 'Admin'
+        flash[:success] = "Welcome to Bilden App! Admin"
+      elsif user[:type] == 'Student'
+        flash[:success] = "Welcome to Bilden App!"
       end
-
-
-     else
-     	flash[:status] = FALSE
-     	flash[:alert] = 'Invalid'
-     	redirect_to login_path
+      redirect_to root_path
+    else
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new'
     end
   end
 
-  def destroy
-    session[:user_id] = nil
-    redirect_to login_path
-
+ def destroy
+    sign_out
+    redirect_to root_url
   end
 end

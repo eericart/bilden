@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  $(".alert").alert('close')
+</script>
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger fade in">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <p>The form contains <%= pluralize(@user.errors.count, "error") %></p>
+    </div>
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li>* <%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -16,18 +16,15 @@ class UsersController < ApplicationController
   	@user = Student.new(user_params)
 
   	if @user.save
-  	  flash[:status] = TRUE
-  	  flash[:alter] = 'YEI'
-  	 else
-  	  flash[:status] = FALSE
-  	  flash[:alter] = @user.errors.full_messages
-  	  end
-
-  	  redirect_to register_path
+  	   flash[:success] = "Welcome to Bilden App!"
+       redirect_to root_path
+  	else
+  	  redirect_to 'new'
+    end
   end
 
-  private:
+  private
     def user_params
-      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation, :extra_credits, :career)
+      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation)
     end
 end
