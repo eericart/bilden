@@ -1,3 +1,10 @@
 <h1>Welcome to bilden app</h1>
-<%= link_to "login", login_path %>
-<%= link_to "register", register_path %>
+<% if signed_in? %>
+  <%= link_to "logout", signout_path,  method: "delete" %>
+
+<%else%>
+  <%= link_to "login", signin_path%>
+
+<%end%>
+
+<%= link_to "register", signup_path %>

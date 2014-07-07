@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'student/index'
   resources :users
-  get '/register' => 'users#new'
-
-  resources :sessions , :only => [:new, :create, :destroy]
-  get 'login' => 'sessions#new'
-  get 'logout' => 'sessions#destroy'
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signin',  to: 'sessions#create',      via: 'post'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
 
 
   #Why cannot use
