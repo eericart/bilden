@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'students/index'
+
   root 'home#index'
-  get 'student/index'
+ 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'users#new',            via: 'get'
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   match '/signin',  to: 'sessions#create',      via: 'post'
   match '/signup',  to: 'users#create',         via: 'post'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
+  match '/dash-student', to: 'students#index',   via: 'get'
 
 
   #Why cannot use
