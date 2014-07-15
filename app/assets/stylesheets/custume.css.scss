@@ -59,9 +59,18 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+body {
+   a {
+      color: #8B0709;
+      &:hover, &:focus {
+        color: #CB0711;}}
+}
+
+
 /*Nabar color*/
-$bgDefault      : #3c8dbc;
-$bgHighlight    : #367fa9;
+$bgDefault      : #790103;
+$bgHighlight    : #4d0000;
 $colDefault     : #ffffff;
 $colHighlight   : #ffffff;
 .navbar-default {
