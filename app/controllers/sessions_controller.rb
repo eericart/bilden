@@ -11,10 +11,13 @@ class SessionsController < ApplicationController
       if user[:type] == 'Admin'
         flash[:success] = "Welcome to Bilden App! Admin #{user.first_name}"
     $user_last_name = @user.last_name
+    redirect_to root_path
       elsif user[:type] == 'Student'
-        flash[:success] = "Welcome to Bilden App #{user.first_name}!"
+        flash[:success] = "Welcome to Bilden App Student #{user.first_name}!"
+       redirect_to dash_student_path
       end
-      redirect_to root_path
+
+      
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
