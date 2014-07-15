@@ -4,19 +4,4 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   protect_from_forgery
-
-
-  private
-  def check_login
-  if !session[:user_id]
-  	 flash[:status] = FALSE
-     flash[:alert] = 'login first'
- 	 redirect_to login_path
-    else
-    @user = User.find(session[:user_id])
-    $user_first_name = @user.first_name
-    $user_last_name = @user.last_name
-
-   end
-  end
 end
