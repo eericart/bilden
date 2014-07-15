@@ -21303,3 +21303,2600 @@ ActionView::Template::Error (wrong number of arguments (1 for 2..3)):
   Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
   Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:01:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (52.3ms)
+  Rendered layouts/_header.html.slim (41.8ms)
+  Rendered layouts/_footer.html.slim (2.0ms)
+Completed 200 OK in 478ms (Views: 463.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 17:01:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:01:59 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:13:23 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.slim (6.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 3641ms (Views: 3639.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:13:27 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:13:57 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 2611ms (Views: 2609.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:00 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:14:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:16:06 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 2565ms (Views: 2564.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:16:09 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:16:10 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:12 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 2701ms (Views: 2700.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:21:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:38 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 2803ms (Views: 2801.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:21:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:21:59 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 2608ms (Views: 2605.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:22:01 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:22:01 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:01 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:01 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:22:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:10 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 2542ms (Views: 2540.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:13 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:24:13 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:24:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:13 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:16 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:24:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:19 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:24:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:24:56 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 2492ms (Views: 2490.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:24:58 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-15 17:24:58 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:25:25 -0400
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/controllers/sessions_controller.rb:8: syntax error, unexpected ',', expecting '('
+...s[:session][:email].downcase)., .try(:authenticate, params[:...
+...                               ^):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:25:25 -0400
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/controllers/sessions_controller.rb:8: syntax error, unexpected ',', expecting '('
+...s[:session][:email].downcase)., .try(:authenticate, params[:...
+...                               ^):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:26:24 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (97.8ms)
+  Rendered layouts/_header.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:26:24 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:26:27 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:26:27 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:26:40 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.slim (7.1ms)
+  Rendered layouts/_footer.html.slim (2.4ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:27:01 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.slim (6.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:27:01 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:27:01 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:27:03 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.slim (7.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-15 17:27:03 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:27:04 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:27:04 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 17:27:09 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:27:10 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.slim (24.4ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:31:21 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (4.3ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:10: syntax error, unexpected ==, expecting ')'
+== f.select :extra_credits, opt...
+  ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020162965600'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:31:21 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (4.0ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:10: syntax error, unexpected ==, expecting ')'
+== f.select :extra_credits, opt...
+  ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:31:22 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.6ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:10: syntax error, unexpected ==, expecting ')'
+== f.select :extra_credits, opt...
+  ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:31:36 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_form.html.slim (51.6ms)
+  Rendered users/new.html.erb within layouts/application (55.5ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:31:36 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (6.5ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:31:36 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:41:37 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (10.4ms)
+  Rendered users/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:41:37 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-15 17:46:55 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JX1sqdabt9DBpmiyS4afi3VSI6m6j6llYD/2TkcLuJo=", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "career"=>""}, "extra_credits"=>"0", "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (1.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 30ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:46:55 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (5.0ms)
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:9: syntax error, unexpected keyword_do_block
+; _slim_controls2 = label Theme: do; 
+                                   ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:10: syntax error, unexpected keyword_do_block, expecting keyword_end
+... 'corporate', 'funky' ].each do |value|; 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected keyword_do_block, expecting keyword_end
+; _slim_controls3 = label do; 
+                            ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:15: syntax error, unexpected keyword_end, expecting end-of-input
+...lim_controls3).to_s)); end; end; @output_buffer.safe_concat(...
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:46:55 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.5ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:9: syntax error, unexpected keyword_do_block
+; _slim_controls2 = label Theme: do; 
+                                   ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:10: syntax error, unexpected keyword_do_block, expecting keyword_end
+... 'corporate', 'funky' ].each do |value|; 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected keyword_do_block, expecting keyword_end
+; _slim_controls3 = label do; 
+                            ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:15: syntax error, unexpected keyword_end, expecting end-of-input
+...lim_controls3).to_s)); end; end; @output_buffer.safe_concat(...
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:47:37 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.2ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (Text line not indented deep enough.
+The first text line defines the necessary text indentation.
+Are you trying to nest a child tag in a tag containing text? Use | for the text block!
+  /media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim, Line 10, Column 4
+    - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    ^
+):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:47:38 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (2.5ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (Text line not indented deep enough.
+The first text line defines the necessary text indentation.
+Are you trying to nest a child tag in a tag containing text? Use | for the text block!
+  /media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim, Line 10, Column 4
+    - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    ^
+):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:47:39 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.5ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Text line not indented deep enough.
+The first text line defines the necessary text indentation.
+Are you trying to nest a child tag in a tag containing text? Use | for the text block!
+  /media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim, Line 10, Column 4
+    - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    ^
+):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:47:39 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (2.5ms)
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (Text line not indented deep enough.
+The first text line defines the necessary text indentation.
+Are you trying to nest a child tag in a tag containing text? Use | for the text block!
+  /media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim, Line 10, Column 4
+    - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    ^
+):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:09 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (32.8ms)
+  Rendered users/new.html.erb within layouts/application (35.5ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5dacefc548>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:09 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (21.7ms)
+  Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5d956d3d60>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:10 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (27.8ms)
+  Rendered users/new.html.erb within layouts/application (30.7ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5d95462068>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:10 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_form.html.slim (20.8ms)
+  Rendered users/new.html.erb within layouts/application (22.9ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5d94c5ac08>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:11 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (29.4ms)
+  Rendered users/new.html.erb within layouts/application (32.2ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5dc8800728>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:11 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_form.html.slim (21.6ms)
+  Rendered users/new.html.erb within layouts/application (23.5ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f5dade201c8>:0x007f5dc85c77e0>):
+     9:   label Theme:
+    10:   - [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |value|
+    11:       label
+    12:       == form.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:12:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:10:in `each'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020154976460'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:41 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (42.0ms)
+  Rendered users/new.html.erb within layouts/application (44.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:48:41 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (7.9ms)
+  Rendered users/new.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:48:41 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:49:18 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (16.8ms)
+  Rendered users/new.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `humanize' for 0:Fixnum):
+    10:   - (0..2).each do |value|
+    11:       label
+    12:       == f.radio_button(:extra_credits, value)
+    13:       == value.humanize
+    14: 
+    15:   == f.submit "Create my account", class: "btn btn-large btn-primary"
+  app/views/users/_form.html.slim:13:in `block (2 levels) in _app_views_users__form_html_slim___4076695027923584299_70020367616440'
+  app/views/users/_form.html.slim:10:in `block in _app_views_users__form_html_slim___4076695027923584299_70020367616440'
+  app/views/users/_form.html.slim:1:in `_app_views_users__form_html_slim___4076695027923584299_70020367616440'
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:49:42 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (22.8ms)
+  Rendered users/new.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:49:42 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_form.html.slim (6.4ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:49:42 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:49:43 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (12.1ms)
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:49:43 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:51:27 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.0ms)
+  Rendered users/new.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:51:28 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:51:29 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (10.5ms)
+  Rendered users/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:51:29 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:51:30 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (8.6ms)
+  Rendered users/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:51:30 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:53:20 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.0ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (Text line not indented deep enough.
+The first text line defines the necessary text indentation.
+Are you trying to nest a child tag in a tag containing text? Use | for the text block!
+  /media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim, Line 11, Column 4
+    - (0..2).each do |value|
+    ^
+):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:53:46 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (15.5ms)
+  Rendered users/new.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:53:46 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (7.0ms)
+  Rendered users/new.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:53:46 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:55:38 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.3ms)
+  Rendered users/new.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:55:38 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:56:35 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (15.2ms)
+  Rendered users/new.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:56:35 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (7.0ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:56:36 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:58:32 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (15.2ms)
+  Rendered users/new.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_header.html.slim (0.9ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 17:58:32 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:59:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (5.1ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:12: syntax error, unexpected '='
+; @output_buffer.safe_concat(((value class="radio-inline").to_s)); 
+                                           ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 17:59:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (3.9ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:12: syntax error, unexpected '='
+; @output_buffer.safe_concat(((value class="radio-inline").to_s)); 
+                                           ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:22 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (4.5ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 18ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ')', expecting =>
+...e:"inlineRadioOptions",:inline).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...eRadioOptions",:inline).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:23 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (5.5ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ')', expecting =>
+...e:"inlineRadioOptions",:inline).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...eRadioOptions",:inline).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:51 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (7.6ms)
+  Rendered users/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 26ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...e:"inlineRadioOptions",:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...RadioOptions",:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:51 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (6.6ms)
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 22ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...e:"inlineRadioOptions",:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...RadioOptions",:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (6.5ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 16ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...e:"inlineRadioOptions",:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...RadioOptions",:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:02:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (8.5ms)
+  Rendered users/new.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...e:"inlineRadioOptions",:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...RadioOptions",:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:03:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (10.4ms)
+  Rendered users/new.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 24ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...:extra_credits, value,{:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...edits, value,{:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:03:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (11.3ms)
+  Rendered users/new.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 22ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...:extra_credits, value,{:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...edits, value,{:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:03:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (4.2ms)
+  Rendered users/new.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 30ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...:extra_credits, value,{:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...edits, value,{:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:03:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.slim (5.7ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected '}', expecting =>
+...:extra_credits, value,{:inline}).to_s)); 
+...                               ^
+/media/ernest/Datos/Dev/bilden/app/views/users/_form.html.slim:11: syntax error, unexpected ';', expecting ')'
+...edits, value,{:inline}).to_s)); 
+...                               ^):
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___3064621346735348600_70020155754700'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:05:01 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (11.6ms)
+  Rendered users/new.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:05:01 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_form.html.slim (6.6ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:05:01 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:05:19 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (10.0ms)
+  Rendered users/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:05:19 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:06:48 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.3ms)
+  Rendered users/new.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:06:48 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (6.7ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:06:48 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:07:06 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (11.5ms)
+  Rendered users/new.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:07:06 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:07:34 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (15.3ms)
+  Rendered users/new.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:07:34 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (9.9ms)
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:07:34 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:08:30 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (13.9ms)
+  Rendered users/new.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:08:30 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:09:04 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (23.3ms)
+  Rendered users/new.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:09:04 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.9ms)
+  Rendered users/new.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:09:04 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:09:35 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.9ms)
+  Rendered users/new.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:09:35 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:10:18 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (16.2ms)
+  Rendered users/new.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 60ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:10:18 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_form.html.slim (7.3ms)
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:10:18 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:11:06 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (15.8ms)
+  Rendered users/new.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:11:06 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:11:54 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (17.7ms)
+  Rendered users/new.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:11:54 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (12.4ms)
+  Rendered users/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:11:54 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:12:32 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.7ms)
+  Rendered users/new.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:12:32 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:13:08 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (13.7ms)
+  Rendered users/new.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:13:08 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (7.4ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:13:08 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:13:29 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (14.0ms)
+  Rendered users/new.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:13:29 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:13:55 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (8.5ms)
+  Rendered users/new.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (Unknown line indicator
+  /media/ernest/Datos/Dev/bilden/app/views/layouts/application.html.slim, Line 11, Column 4
+    !-- Navegation bar -->
+    ^
+):
+  slim (2.0.2) lib/slim/parser.rb:478:in `syntax_error!'
+  slim (2.0.2) lib/slim/parser.rb:230:in `parse_line_indicators'
+  slim (2.0.2) lib/slim/parser.rb:176:in `parse_line'
+  slim (2.0.2) lib/slim/parser.rb:77:in `call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `block in call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `each'
+  temple (0.6.7) lib/temple/engine.rb:50:in `inject'
+  temple (0.6.7) lib/temple/engine.rb:50:in `call'
+  temple (0.6.7) lib/temple/mixins/template.rb:10:in `compile'
+  temple (0.6.7) lib/temple/templates/rails.rb:34:in `call'
+  actionview (4.1.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:13:55 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (10.6ms)
+  Rendered users/new.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (Unknown line indicator
+  /media/ernest/Datos/Dev/bilden/app/views/layouts/application.html.slim, Line 11, Column 4
+    !-- Navegation bar -->
+    ^
+):
+  slim (2.0.2) lib/slim/parser.rb:478:in `syntax_error!'
+  slim (2.0.2) lib/slim/parser.rb:230:in `parse_line_indicators'
+  slim (2.0.2) lib/slim/parser.rb:176:in `parse_line'
+  slim (2.0.2) lib/slim/parser.rb:77:in `call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `block in call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `each'
+  temple (0.6.7) lib/temple/engine.rb:50:in `inject'
+  temple (0.6.7) lib/temple/engine.rb:50:in `call'
+  temple (0.6.7) lib/temple/mixins/template.rb:10:in `compile'
+  temple (0.6.7) lib/temple/templates/rails.rb:34:in `call'
+  actionview (4.1.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:17:42 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (7.9ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_header.html.slim (1.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-15 18:17:42 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_form.html.slim (9.4ms)
+  Rendered users/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-15 18:17:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 18:17:48 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (12.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 66ms (Views: 51.4ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-15 18:17:48 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.4ms)
