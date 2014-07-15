@@ -5,11 +5,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	user = User.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:password])
+  	user = User.find_by(email: params[:session][:email].downcase)., .try(:authenticate, params[:session][:password])
+    if user
       sign_in user
       if user[:type] == 'Admin'
-        flash[:success] = "Welcome to Bilden App! Admin #{user.first_name}"  
+        flash[:success] = "Welcome to Bilden App! Admin #{user.first_name}"
     $user_last_name = @user.last_name
       elsif user[:type] == 'Student'
         flash[:success] = "Welcome to Bilden App #{user.first_name}!"

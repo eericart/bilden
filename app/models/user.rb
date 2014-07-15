@@ -18,6 +18,10 @@ class User < ActiveRecord::Base
     Digest::MD5.hexdigest(token.to_s)
   end
 
+  def admin?
+    type == "Admin"
+  end
+
   private
 
     def create_remember_token
