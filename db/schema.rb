@@ -11,7 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707015701) do
+ActiveRecord::Schema.define(version: 20140715234005) do
+
+  create_table "careers", id: false, force: true do |t|
+    t.string   "name"
+    t.integer  "max_credits"
+    t.string   "code",        limit: 3, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subjects", force: true do |t|
+    t.string   "name"
+    t.integer  "credits"
+    t.string   "code"
+    t.integer  "subject_prerequisite_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "career_id"
+  end
+
+  add_index "subjects", ["career_id"], name: "index_subjects_on_career_id"
+  add_index "subjects", ["subject_prerequisite_id"], name: "index_subjects_on_subject_prerequisite_id"
+
+  create_table "subjects_subjects", force: true do |t|
+    t.integer "subject_id"
+  end
 
   create_table "users", force: true do |t|
     t.string   "first_name"
