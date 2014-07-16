@@ -5,8 +5,10 @@
   == f.email_field :email
   == f.password_field :password
   == f.password_field :password_confirmation, label: "Confirmation"
-  == f.text_field :career, label:"Career"
+  == f.form_group :career do 
+    == f.select :career, options_from_collection_for_select(Career.all, :id, :name)
   == f.form_group :extra_credits, label: { text: "Extra Credits:\t\t" } do
+    br
     - (0..2).each do |value|
       == f.radio_button :extra_credits, value,label: "#{value}", inline: true
   == f.submit "Create my account", class: "btn btn-large btn-primary"

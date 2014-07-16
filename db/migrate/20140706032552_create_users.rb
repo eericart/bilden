@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :type
       t.string :career
       t.integer :extra_credits
+      t.references :career, index: true
 
       t.timestamps
     end
