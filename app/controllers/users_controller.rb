@@ -14,17 +14,15 @@ class UsersController < ApplicationController
       sign_in @user
       redirect_to root_path
 
-     else
+    else
       flash[:errors] = @user.errors.full_messages
       redirect_to signup_path
-
-      end
+    end
 
   end
 
   private
     def user_params
       params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career_code, :extra_credits)
-
     end
 end
