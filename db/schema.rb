@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140716135338) do
+ActiveRecord::Schema.define(version: 20140716161434) do
+
+  create_table "career_subjects", force: true do |t|
+    t.string   "career_code"
+    t.integer  "subject_id"
+    t.integer  "subject_prerequisite_id"
+    t.integer  "credits_prerequisite",    default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "trimester_number"
+  end
+
+  add_index "career_subjects", ["subject_id"], name: "index_career_subjects_on_subject_id"
+  add_index "career_subjects", ["subject_prerequisite_id"], name: "index_career_subjects_on_subject_prerequisite_id"
 
   create_table "careers", id: false, force: true do |t|
     t.string   "name"
@@ -25,21 +38,20 @@ ActiveRecord::Schema.define(version: 20140716135338) do
     t.datetime "documents_updated_at"
   end
 
+  create_table "students_subjects", force: true do |t|
+    t.integer "user_id"
+    t.integer "subjects_id"
+  end
+
+  add_index "students_subjects", ["subjects_id"], name: "index_students_subjects_on_subjects_id"
+  add_index "students_subjects", ["user_id"], name: "index_students_subjects_on_user_id"
+
   create_table "subjects", force: true do |t|
     t.string   "name"
     t.integer  "credits"
     t.string   "code"
-    t.integer  "subject_prerequisite_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "career_id"
-  end
-
-  add_index "subjects", ["career_id"], name: "index_subjects_on_career_id"
-  add_index "subjects", ["subject_prerequisite_id"], name: "index_subjects_on_subject_prerequisite_id"
-
-  create_table "subjects_subjects", force: true do |t|
-    t.integer "subject_id"
   end
 
   create_table "users", force: true do |t|
