@@ -1,6 +1,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap/theme";
 //= require rails_bootstrap_forms
 
 
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  padding-top: 2em;
+  padding-top: 2.5em;
   padding-left: 3em;
 }
 

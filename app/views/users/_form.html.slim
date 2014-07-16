@@ -6,7 +6,9 @@
   == f.password_field :password
   == f.password_field :password_confirmation, label: "Confirmation"
   == f.text_field :career, label:"Career"
-  == f.form_group :extra_credits, label: { text: "Extra Credits:\t\t" } do
+  == f.form_group , label: { text: "Carreer:" } do
+     == f.select :order_id, options_from_collection_for_select(Order.all, :id, :customer_name),{},{ class: 'form-control' }
+  == f.form_group :extra_credits, label: { text: "Extra Credits:" } do
     - (0..2).each do |value|
       == f.radio_button :extra_credits, value,label: "#{value}", inline: true
   == f.submit "Create my account", class: "btn btn-large btn-primary"

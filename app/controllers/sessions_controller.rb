@@ -8,10 +8,9 @@ class SessionsController < ApplicationController
   	user = User.find_by(email: params[:session][:email].downcase).try(:authenticate, params[:session][:password])
     if user
       sign_in user
-      if user[:type] == 'Admin'
+      if user.admin?
         flash[:success] = "Welcome to Bilden App! Admin #{user.first_name}"
-    $user_last_name = @user.last_name
-      elsif user[:type] == 'Student'
+      else
         flash[:success] = "Welcome to Bilden App #{user.first_name}!"
       end
       redirect_to root_path

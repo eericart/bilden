@@ -1,7 +1,22 @@
 Rails.application.routes.draw do
+  get 'careers/index'
+
+  get 'careers/show'
+
+  get 'careers/new'
+
+  get 'careers/create'
+
+  get 'careers/update'
+
+  get 'careers/edit'
+
+  get 'careers/destroy'
+
   root 'home#index'
   get 'student/index'
   resources :users
+  resources :careers
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'

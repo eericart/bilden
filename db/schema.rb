@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140715234005) do
+ActiveRecord::Schema.define(version: 20140716135338) do
 
   create_table "careers", id: false, force: true do |t|
     t.string   "name"
     t.integer  "max_credits"
-    t.string   "code",        limit: 3, null: false
+    t.string   "code",                   limit: 3, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "documents_file_name"
+    t.string   "documents_content_type"
+    t.integer  "documents_file_size"
+    t.datetime "documents_updated_at"
   end
 
   create_table "subjects", force: true do |t|
@@ -43,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140715234005) do
     t.string   "last_name"
     t.string   "email"
     t.string   "type"
-    t.string   "career"
+    t.string   "career_id"
     t.integer  "extra_credits"
     t.datetime "created_at"
     t.datetime "updated_at"

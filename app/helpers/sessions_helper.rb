@@ -27,5 +27,8 @@ module SessionsHelper
     self.current_user = nil
   end
 
+  def signed_admin?
+    signed_in? and current_user.admin?
+  end
 
 end
