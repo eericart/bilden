@@ -31932,3 +31932,9 @@ Migrating to CreateStudentsSubjects (20140716161434)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+  [1m[36mUser Load (46.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mSQL (3.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
