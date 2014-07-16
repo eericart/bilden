@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140716135338) do
     t.string   "last_name"
     t.string   "email"
     t.string   "type"
-    t.string   "career_id"
+    t.string   "career_code"
     t.integer  "extra_credits"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,20 +1,6 @@
 Rails.application.routes.draw do
-  get 'careers/index'
-
-  get 'careers/show'
-
-  get 'careers/new'
-
-  get 'careers/create'
-
-  get 'careers/update'
-
-  get 'careers/edit'
-
-  get 'careers/destroy'
-
   root 'home#index'
-  get 'student/index'
+
   resources :users
   resources :careers
   resources :sessions, only: [:new, :create, :destroy]
@@ -23,6 +9,7 @@ Rails.application.routes.draw do
   match '/signin',  to: 'sessions#create',      via: 'post'
   match '/signup',  to: 'users#create',         via: 'post'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
+  match '/dash-student', to: 'students#index',   via: 'get'
 
 
   #Why cannot use

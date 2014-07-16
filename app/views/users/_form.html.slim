@@ -5,10 +5,17 @@
   == f.email_field :email
   == f.password_field :password
   == f.password_field :password_confirmation, label: "Confirmation"
+<<<<<<< HEAD
   == f.text_field :career, label:"Career"
   == f.form_group , label: { text: "Carreer:" } do
      == f.select :order_id, options_from_collection_for_select(Order.all, :id, :customer_name),{},{ class: 'form-control' }
   == f.form_group :extra_credits, label: { text: "Extra Credits:" } do
+=======
+  == f.form_group :career do 
+    == f.select :career, options_from_collection_for_select(Career.all, :id, :name)
+  == f.form_group :extra_credits, label: { text: "Extra Credits:\t\t" } do
+    br
+>>>>>>> de3bb0aedb6dd15913d554a4ac47e8bd70a2d4eb
     - (0..2).each do |value|
       == f.radio_button :extra_credits, value,label: "#{value}", inline: true
   == f.submit "Create my account", class: "btn btn-large btn-primary"

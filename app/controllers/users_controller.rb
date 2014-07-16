@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> de3bb0aedb6dd15913d554a4ac47e8bd70a2d4eb
   def show
   end
 
@@ -25,7 +29,7 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career, :extra_credits)
+      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career_code, :extra_credits)
 
     end
 end
