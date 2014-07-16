@@ -1,9 +1,5 @@
 class UsersController < ApplicationController
 
-  before_filter :check_login, :only => [:index]
-
-  def index
-  end
 
   def show
   end
@@ -30,7 +26,7 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career, :extra_credits)
+      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career_code, :extra_credits)
 
     end
 end

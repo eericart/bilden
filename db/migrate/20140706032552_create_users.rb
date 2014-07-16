@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password
       t.string :email
       t.string :type
-      t.string :career
+      t.string :career_code
       t.integer :extra_credits
       t.references :career, index: true
 
