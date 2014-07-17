@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   match '/signup',  to: 'users#create',         via: 'post'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/dash-student', to: 'student#index',   via: 'get'
-
+  match '/uploads/new', to: 'uploads#new', via:'post'
 
   #Why cannot use
 

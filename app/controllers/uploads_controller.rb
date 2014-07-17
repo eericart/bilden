@@ -1,21 +1,20 @@
 class UploadsController < ApplicationController
-
-  def new
-    @upload = Upload.new
-  end
-
   def create
    @uploads = []
-    if params[:attachments]
-      params[:attachments].each {|file| @uploads.push(Upload.new(attachment: file))}
+    if params[:upload]
+      params[:upload][:files].each {|file| @uploads.push(Upload.new(attachment: file))}
     else
-      render :upload and return
+      flash[:danger]= 'Not file chosen.'
+      redirect_to new_upload_path and return
     end
      respond_to do |format|
-      if @uploads.all? { |u| u.save}
+      if @uploads.all? { |u| u.valid?}
+        @uploads.each { |u| u.save}
+        flash[:success]= 'Upload was successfully created.'
         format.html { redirect_to careers_path, notice: 'Upload was successfully created.' }
       else
-        format.html { redirect_to careers_path , danger: 'Upload was successfully created.'}
+        flash[:danger]= 'Upload fail.'
+        format.html { redirect_to new_upload_path }
       end
     end
   end
