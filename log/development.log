@@ -65661,3 +65661,287 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 21:26:31
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-16 21:26:31 -0400
+
+
+Started GET "/uploads/new" for 127.0.0.1 at 2014-07-16 21:30:59 -0400
+Processing by UploadsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'c43e17613a1b36eec3c09e9d7fae577b' LIMIT 1
+  Rendered uploads/new.html.slim within layouts/application (11.6ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 71ms (Views: 45.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'c43e17613a1b36eec3c09e9d7fae577b' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/careers.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-16 21:31:02 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z577IJkLb3sfrr/Z/DxbPfpl/NZGVpkNiMIlnS0YNM8="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'c43e17613a1b36eec3c09e9d7fae577b' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Admin') AND "users"."id" = 1  [["remember_token", "a6a68c5d22af2b53264f20a156d3ab77"], ["updated_at", "2014-07-17 01:31:04.415902"]]
+  [1m[36m (224.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 226.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/careers.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:04 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 21:31:05 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-16 21:31:05 -0400

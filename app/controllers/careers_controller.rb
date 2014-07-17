@@ -23,9 +23,4 @@ class CareersController < ApplicationController
     def set_career
       @career = Career.find_by(params[:code])
     end
-
-    def signed_in_admin
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
-      render_404 unless signed_admin?
-    end
 end

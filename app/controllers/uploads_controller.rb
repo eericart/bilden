@@ -1,4 +1,6 @@
 class UploadsController < ApplicationController
+  before_action :signed_in_admin
+
   def create
    @uploads = []
     if params[:upload]
@@ -27,4 +29,5 @@ class UploadsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
