@@ -1,0 +1,13 @@
+table class="table table-bordered table-striped"
+  thead
+    tr
+      th Download Link
+      th &nbsp;
+  tbody
+    - @uploads.each do |upload|
+      tr
+       th == link_to "Download upload", upload.attachment_url
+       th  == button_to "Delete",  upload, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete ?"
+
+center
+  == link_to "New Career",new_upload_path,class:"btn btn-info btn-lg"

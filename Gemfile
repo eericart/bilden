@@ -19,7 +19,7 @@ gem 'rake', '~> 10.3.2'
 gem 'autoprefixer-rails'
 gem 'bootstrap_form'
 gem 'jquery-fileupload-rails'
-gem "paperclip", "~> 4.1"
+gem 'carrierwave'
 
 # Use unicorn as the app server
 # gem 'unicorn'

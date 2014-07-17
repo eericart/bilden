@@ -5,7 +5,4 @@ class Career < ActiveRecord::Base
 
   has_many :career_subjects
   has_many :students
-
-  has_attached_file :documents, :default_url => "/careers/pdf/missing.pdf"
-  validates_attachment_content_type :documents, :content_type =>['application/pdf']
 end

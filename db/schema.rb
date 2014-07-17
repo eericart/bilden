@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140716161434) do
+ActiveRecord::Schema.define(version: 20140716221649) do
 
   create_table "career_subjects", force: true do |t|
     t.string   "career_code"
@@ -29,13 +29,9 @@ ActiveRecord::Schema.define(version: 20140716161434) do
   create_table "careers", id: false, force: true do |t|
     t.string   "name"
     t.integer  "max_credits"
-    t.string   "code",                   limit: 3, null: false
+    t.string   "code",        limit: 3, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "documents_file_name"
-    t.string   "documents_content_type"
-    t.integer  "documents_file_size"
-    t.datetime "documents_updated_at"
   end
 
   create_table "students_subjects", force: true do |t|
@@ -50,6 +46,12 @@ ActiveRecord::Schema.define(version: 20140716161434) do
     t.string   "name"
     t.integer  "credits"
     t.string   "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "uploads", force: true do |t|
+    t.string   "attachment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
