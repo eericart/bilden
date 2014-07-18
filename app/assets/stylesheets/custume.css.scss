@@ -87,7 +87,7 @@ $colHighlight   : #ffffff;
       > a {
         color: $colDefault;
         &:hover,  &:focus {
-          color: $colHighlight; }}}
+          color: red; }}}
     > .active {
       > a, > a:hover, > a:focus {
         color: $colHighlight;
