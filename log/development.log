@@ -72840,3 +72840,676 @@ Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:44:37 -0
 
 
 Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:44:37 -0400
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+Processing by StudentsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'f27e0fc4f4aac39ed2cdf5b1edfabcac' LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 64ms (Views: 45.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:46:57 -0400
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:48:33 -0400
+Processing by StudentsController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'f27e0fc4f4aac39ed2cdf5b1edfabcac' LIMIT 1
+  Rendered students/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Career: </strong>
+    5:   <%= @student.career_name%>
+    6: </p>
+    7: 
+    8: <p>
+  app/models/student.rb:6:in `career_name'
+  app/views/students/show.html.erb:5:in `_app_views_students_show_html_erb__3665832883864258471_2174493000'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:49:17 -0400
+Processing by StudentsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'f27e0fc4f4aac39ed2cdf5b1edfabcac' LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Career: </strong>
+    5:   <%= @student.career_name %>
+    6: </p>
+    7: 
+    8: <p>
+  app/models/student.rb:6:in `career_name'
+  app/views/students/show.html.erb:5:in `_app_views_students_show_html_erb__3665832883864258471_2192738160'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-19 11:49:23 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'f27e0fc4f4aac39ed2cdf5b1edfabcac' LIMIT 1
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-19 11:49:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo=", "session"=>{"email"=>"char0394@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'char0394@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3[0m  [["remember_token", "1a1e53c603fb99d28d014a0764b1c625"], ["updated_at", "2014-07-19 15:49:29.333239"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/dash-student
+Completed 302 Found in 90ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:49:29 -0400
+Processing by StudentsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '1a1e53c603fb99d28d014a0764b1c625' LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Career: </strong>
+    5:   <%= @student.career_name %>
+    6: </p>
+    7: 
+    8: <p>
+  app/models/student.rb:6:in `career_name'
+  app/views/students/show.html.erb:5:in `_app_views_students_show_html_erb__3665832883864258471_2192738160'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:49:47 -0400
+Processing by StudentsController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '1a1e53c603fb99d28d014a0764b1c625' LIMIT 1
+  Rendered students/show.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined local variable or method `career_name' for #<#<Class:0x000001053c5838>:0x00000107873978>):
+    2: 
+    3: <p>
+    4:   <strong>Career: </strong>
+    5:   <%= career_name %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/students/show.html.erb:5:in `_app_views_students_show_html_erb__3665832883864258471_2210631960'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '1a1e53c603fb99d28d014a0764b1c625' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (2.0ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:51:31 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-19 11:51:44 -0400
+Processing by UsersController#new as HTML
+  [1m[35mCareer Load (0.3ms)[0m  SELECT "careers".* FROM "careers"
+  Rendered users/_form.html.slim (18.7ms)
+  Rendered users/new.html.erb within layouts/application (44.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '1a1e53c603fb99d28d014a0764b1c625' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.7ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.3ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('IDS') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-19 15:52:40.875452"], ["name", "Software"], ["updated_at", "2014-07-19 15:52:40.875452"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+Processing by UsersController#new as HTML
+  [1m[35mCareer Load (0.4ms)[0m  SELECT "careers".* FROM "careers"
+  Rendered users/_form.html.slim (15.9ms)
+  Rendered users/new.html.erb within layouts/application (17.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '1a1e53c603fb99d28d014a0764b1c625' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.9ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:52:44 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo=", "user"=>{"first_name"=>"DS", "last_name"=>"SD", "email"=>"a@b.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "career_code"=>"ids", "extra_credits"=>"2"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('a@b.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("career_code", "created_at", "email", "extra_credits", "first_name", "last_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["career_code", "ids"], ["created_at", "2014-07-19 15:53:10.393989"], ["email", "a@b.com"], ["extra_credits", 2], ["first_name", "DS"], ["last_name", "SD"], ["password_digest", "$2a$10$GRkj1cIlxhDwmSULBM1AnOFRlf/7EmkKdWvxPe3qmiUAzg7W7eDOC"], ["remember_token", "5381d8bd72661725b88a082719ff68a6"], ["type", "Student"], ["updated_at", "2014-07-19 15:53:10.393989"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 4[0m  [["remember_token", "5872547bef253013193f38072abf27dd"], ["updated_at", "2014-07-19 15:53:10.400552"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 100ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '5872547bef253013193f38072abf27dd' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:53:10 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '5872547bef253013193f38072abf27dd' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 4  [["remember_token", "e064cf4f69f4e8ee791ff07cc1650395"], ["updated_at", "2014-07-19 15:53:14.796860"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:53:14 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-19 11:53:17 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered layouts/_header.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo=", "session"=>{"email"=>"a@b.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'a@b.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 4[0m  [["remember_token", "48d2ff45e7c34945f89cd96157a2424a"], ["updated_at", "2014-07-19 15:53:29.459631"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/dash-student
+Completed 302 Found in 83ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/dash-student" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+Processing by StudentsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1[0m
+  [1m[35mCareer Load (0.5ms)[0m  SELECT  "careers".* FROM "careers"  WHERE "careers"."code" = ? LIMIT 1  [["code", "ids"]]
+  Rendered students/show.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_header.html.slim (0.6ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:53:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:53:46 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:53:46 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:53:46 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:53:46 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:53:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:53:47 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:53:47 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:53:47 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:53:47 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:53:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:53:59 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:53:59 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:53:59 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:53:59 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:53:59 -0400
+
+
+Started GET "/studentsd" for 127.0.0.1 at 2014-07-19 11:57:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/studentsd"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (45.0ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.6ms)
+
+
+Started GET "/studentsd" for 127.0.0.1 at 2014-07-19 11:58:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/studentsd"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Charline/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:58:35 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (229.5ms)
+  Rendered layouts/_header.html.slim (9.9ms)
+  Rendered layouts/_footer.html.slim (2.1ms)
+Completed 200 OK in 1367ms (Views: 1330.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:58:37 -0400
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '48d2ff45e7c34945f89cd96157a2424a' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 4[0m  [["remember_token", "7f57727a1cd1f6ff146e4472ac99d726"], ["updated_at", "2014-07-19 15:58:40.850519"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 61ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered layouts/_header.html.slim (0.9ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:40 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-19 11:58:41 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-19 11:58:41 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-19 11:58:41 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-19 11:58:41 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-19 11:58:43 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (146.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (10.4ms)
+  Rendered layouts/_footer.html.slim (2.2ms)
+Completed 200 OK in 275ms (Views: 274.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-19 11:58:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo=", "session"=>{"email"=>"char0394@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'char0394@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 3  [["remember_token", "2aa38e69393379b5cf820cd804dd1027"], ["updated_at", "2014-07-19 15:58:48.023868"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/students
+Completed 302 Found in 91ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-07-19 11:58:48 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '2aa38e69393379b5cf820cd804dd1027' LIMIT 1
+  Rendered students/_student.html.erb (37.1ms)
+  Rendered students/index.html.erb within layouts/application (39.9ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    4: <p>
+    5:   <strong>Career:</strong>
+    6:   <%= @student.career_code%>
+    7:   <%= @student.career_name%>
+    8: </p>
+    9: 
+   10: <p>
+  app/models/student.rb:6:in `career_name'
+  app/views/students/_student.html.erb:7:in `_app_views_students__student_html_erb___1535912175150691282_2178663400'
+  app/views/students/index.html.erb:4:in `_app_views_students_index_html_erb___2656355749286143218_2178614120'
+
+
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Charline/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-19 11:58:51 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '2aa38e69393379b5cf820cd804dd1027' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2zGBmMgywpGJajJYGpABPZTi+wUgFHNBLRfNV9VFEo=", "session"=>{"email"=>"a@b.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'a@b.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Student') AND "users"."id" = 4  [["remember_token", "0c904f3110d5ed489648d34385dc5b9b"], ["updated_at", "2014-07-19 15:58:57.174867"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/students
+Completed 302 Found in 91ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0c904f3110d5ed489648d34385dc5b9b' LIMIT 1
+  [1m[36mCareer Load (0.4ms)[0m  [1mSELECT  "careers".* FROM "careers"  WHERE "careers"."code" = ? LIMIT 1[0m  [["code", "ids"]]
+  Rendered students/_student.html.erb (58.4ms)
+  Rendered students/index.html.erb within layouts/application (61.6ms)
+  Rendered layouts/_header.html.slim (0.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 88ms (Views: 85.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+
+
+Started GET "/assets/careers.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-19 11:58:57 -0400
+
+
+Started GET "/students/4" for 127.0.0.1 at 2014-07-19 11:59:00 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0c904f3110d5ed489648d34385dc5b9b' LIMIT 1
+  [1m[36mCareer Load (0.2ms)[0m  [1mSELECT  "careers".* FROM "careers"  WHERE "careers"."code" = ? LIMIT 1[0m  [["code", "ids"]]
+  Rendered students/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.slim (0.6ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 124ms (Views: 121.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-07-19 11:59:04 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0c904f3110d5ed489648d34385dc5b9b' LIMIT 1
+  [1m[36mCareer Load (0.2ms)[0m  [1mSELECT  "careers".* FROM "careers"  WHERE "careers"."code" = ? LIMIT 1[0m  [["code", "ids"]]
+  Rendered students/_student.html.erb (2.0ms)
+  Rendered students/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.5ms)
