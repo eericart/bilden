@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   match '/signin',  to: 'sessions#create',      via: 'post'
   match '/signup',  to: 'users#create',         via: 'post'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
-  match '/dash-student', to: 'student#index',   via: 'get'
+  match '/dash-student', to: 'students#show',   via: 'get'
   match '/uploads/new', to: 'uploads#new', via:'post'
 
   #Why cannot use

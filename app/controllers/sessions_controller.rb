@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
 
       else
         flash[:success] = "Welcome to Bilden App #{user.first_name}!"
-        redirect_to dash_student_path
+        redirect_to students_path 
       end
     else
       flash.now[:danger] = 'Invalid email/password combination'
