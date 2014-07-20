@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   resources :uploads, only: [:index, :new, :create, :destroy]
-  resources :users
+  resources :users, only: [:new, :create, :destroy]
   resources :careers
   match '/careers/:code', to: 'careers#show',   via: 'get'
   resources :students

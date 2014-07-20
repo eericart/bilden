@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  def show
-  end
 
   def new
   	@user = User.new
@@ -10,13 +8,10 @@ class UsersController < ApplicationController
   	@user = Student.new(user_params)
 
     if @user.save
-      flash[:success] = 'Welcome to Bilden App!'
       sign_in @user
-      redirect_to root_path
-
+      redirect_to root_path,success: 'Welcome to Bilden App!'
     else
-      flash[:errors] = @user.errors.full_messages
-      redirect_to signup_path
+      redirect_to 'new', errors
     end
 
   end

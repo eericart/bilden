@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140716221649) do
+ActiveRecord::Schema.define(version: 20140719224305) do
 
   create_table "career_subjects", force: true do |t|
     t.string   "career_code"
@@ -34,20 +34,17 @@ ActiveRecord::Schema.define(version: 20140716221649) do
     t.datetime "updated_at"
   end
 
-  create_table "students_subjects", force: true do |t|
-    t.integer "user_id"
-    t.integer "subjects_id"
-  end
-
-  add_index "students_subjects", ["subjects_id"], name: "index_students_subjects_on_subjects_id"
-  add_index "students_subjects", ["user_id"], name: "index_students_subjects_on_user_id"
-
   create_table "subjects", force: true do |t|
     t.string   "name"
     t.integer  "credits"
     t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "subjects_users", id: false, force: true do |t|
+    t.integer "subject_id"
+    t.integer "user_id"
   end
 
   create_table "uploads", force: true do |t|

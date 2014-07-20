@@ -1,13 +1,8 @@
-<p id="notice"><%= notice %></p>
+<h1>Bilden home</h1>
+<p>Welcome</p>
 
-<p>
-  <strong>Career: </strong>
-  <%= @student.career_name %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @student.first_name %>
-</p>
+<%= render @student%>
 
 
+<%= link_to 'What to take next?', @student %>
+<%= link_to 'Update pensum' %>

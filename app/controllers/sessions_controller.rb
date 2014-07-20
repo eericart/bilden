@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
 
-
   def new
   end
 
@@ -9,16 +8,12 @@ class SessionsController < ApplicationController
     if user
       sign_in user
       if user.admin?
-        flash[:success] = "Welcome to Bilden App! Admin #{user.first_name}"
-        redirect_to root_path
-
+        redirect_back_or root_url
       else
-        flash[:success] = "Welcome to Bilden App #{user.first_name}!"
-        redirect_to students_path 
+       redirect_back_or user
       end
     else
-      flash.now[:danger] = 'Invalid email/password combination'
-      render 'new'
+      render 'new', danger: 'Invalid email/password combination'
     end
   end
 
