@@ -20,6 +20,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap_form'
 gem 'jquery-fileupload-rails'
 gem 'carrierwave'
+gem 'tabula-extractor'
 
 # Use unicorn as the app server
 # gem 'unicorn'

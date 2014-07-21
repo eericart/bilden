@@ -89212,3 +89212,1667 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects" INNER JOIN "career_subjects_subjects" ON "subjects"."id" = "career_subjects_subjects"."subject_id" WHERE "career_subjects_subjects"."career_subject_id" = ?[0m  [["career_subject_id", 1]]
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (1.4ms)[0m  SELECT "subjects".* FROM "subjects"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  [1m[35m (0.5ms)[0m  SELECT "subjects"."id" FROM "subjects"
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  [1m[35mSubject Load (0.4ms)[0m  SELECT "subjects".* FROM "subjects"
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317') LIMIT 1[0m
+  [1m[35mSubject Load (0.8ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1
+  [1m[36mSubject Load (0.6ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1[0m
+  [1m[35mSubject Load (2.2ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1
+  [1m[36mSubject Load (0.6ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1[0m
+  [1m[35mSubject Load (0.5ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1
+  [1m[36mSubject Load (0.6ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312') LIMIT 1[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE (code = 'IDS317','IDS312')
+SQLite3::SQLException: near ",": syntax error: SELECT "subjects".* FROM "subjects"  WHERE (code = 'IDS317','IDS312')
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312')
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"  WHERE "subjects"."code" IN ('IDS317')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "subjects"  WHERE "subjects"."code" IN ('IDS317 IDS312')
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312')
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317', 'IDS312')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects" INNER JOIN "career_subjects_subjects" ON "subjects"."id" = "career_subjects_subjects"."subject_id" WHERE "career_subjects_subjects"."career_subject_id" = ?  [["career_subject_id", 1]]
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."code" IN ('IDS317')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mDELETE FROM "career_subjects_subjects" WHERE "career_subjects_subjects"."career_subject_id" = ? AND "career_subjects_subjects"."subject_id" = 2[0m  [["career_subject_id", 1]]
+  [1m[35m (242.0ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects" INNER JOIN "career_subjects_subjects" ON "subjects"."id" = "career_subjects_subjects"."subject_id" WHERE "career_subjects_subjects"."career_subject_id" = ?[0m  [["career_subject_id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-21 15:59:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (82.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (14.9ms)
+  Rendered layouts/_footer.html.slim (3.4ms)
+Completed 200 OK in 13916ms (Views: 13867.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:53 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 15:59:54 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-21 16:00:48 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-07-21 16:00:50 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (182.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered layouts/_header.html.slim (52.3ms)
+  Rendered layouts/_footer.html.slim (2.6ms)
+Completed 200 OK in 459ms (Views: 458.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-21 16:00:51 -0400
+
+
+Started POST "/signin" for 127.0.0.1 at 2014-07-21 16:01:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "session"=>{"email"=>"email@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'email@admin.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered layouts/_header.html.slim (3.5ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 330ms (Views: 326.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:37 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:01:38 -0400
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-07-21 16:01:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "session"=>{"email"=>"ernest@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'ernest@admin.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."type" IN ('Admin') AND "users"."id" = 2[0m  [["remember_token", "0b8f31631711b6e205ad7a832cc767ca"], ["updated_at", "2014-07-21 20:01:40.627445"]]
+  [1m[35m (345.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 577ms (ActiveRecord: 347.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:41 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:01:42 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-21 16:01:43 -0400
+
+
+Started GET "/careers" for 127.0.0.1 at 2014-07-21 16:01:46 -0400
+
+ActionController::RoutingError (uninitialized constant CareersController):
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.1ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.1ms)
+
+
+Started GET "/careers/" for 127.0.0.1 at 2014-07-21 16:01:49 -0400
+
+ActionController::RoutingError (uninitialized constant CareersController):
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/ernest/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.0ms)
+
+
+Started GET "/admin/careers" for 127.0.0.1 at 2014-07-21 16:02:04 -0400
+Processing by Admin::CareersController#index as HTML
+  Rendered admin/careers/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  Rendered layouts/_header.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:05 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:02:06 -0400
+
+
+Started GET "/admin/careers/new" for 127.0.0.1 at 2014-07-21 16:02:14 -0400
+Processing by Admin::CareersController#new as HTML
+  Rendered admin/careers/new.html.slim within layouts/application (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (8.9ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:14 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:15 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:02:16 -0400
+
+
+Started GET "/admin/careers/new" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+Processing by Admin::CareersController#new as HTML
+  Rendered admin/careers/new.html.slim within layouts/application (87.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 138ms (Views: 136.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:02:38 -0400
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:02:59 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b35414a48 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-f3d304>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b35414a20 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-hecq74>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:03:00.014010"], ["updated_at", "2014-07-21 20:03:00.014010"]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 92ms
+
+SyntaxError (/media/ernest/Datos/Dev/bilden/lib/pdf_process/process.rb:61: syntax error, unexpected tIDENTIFIER, expecting keyword_then or ';' or '\n'
+      if data.size == 1 data[0].include? "TRIMESTRE"
+                            ^
+/media/ernest/Datos/Dev/bilden/lib/pdf_process/process.rb:63: syntax error, unexpected keyword_else, expecting keyword_end
+/media/ernest/Datos/Dev/bilden/lib/pdf_process/process.rb:74: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/models/upload.rb:17:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (285.4ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:03:42 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b35c22b40 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-gq2qhe>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b35c22b18 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-101lebd>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:03:42.947115"], ["updated_at", "2014-07-21 20:03:42.947115"]]
+  [1m[35m (1.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 83ms
+
+LoadError (cannot load such file -- pdf_helper.rb):
+  lib/pdf_process/process.rb:1:in `<top (required)>'
+  app/models/upload.rb:17:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.7ms)
+
+
+Started GET "/admin/careers" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+Processing by Admin::CareersController#index as HTML
+  Rendered admin/careers/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (4.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:04:33 -0400
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:04:36 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b35130480 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-17p6vm5>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b35130458 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-lwcb4i>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:04:36.856851"], ["updated_at", "2014-07-21 20:04:36.856851"]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 107ms
+
+NoMethodError (undefined method `current_path' for #<Upload:0x007f8b34fcedd0>):
+  lib/pdf_process/process.rb:28:in `block in convert_to_csv'
+  lib/pdf_process/process.rb:27:in `convert_to_csv'
+  lib/pdf_process/process.rb:13:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.8ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:05:17 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b462beb88 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1p3v8se>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b462beb60 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1dvdttx>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:05:17.538858"], ["updated_at", "2014-07-21 20:05:17.538858"]]
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 63ms
+
+NoMethodError (undefined method `current_path' for #<Upload:0x007f8b46013b18>):
+  lib/pdf_process/process.rb:28:in `block in convert_to_csv'
+  lib/pdf_process/process.rb:27:in `convert_to_csv'
+  lib/pdf_process/process.rb:13:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+  [1m[35mUpload Load (0.9ms)[0m  SELECT "uploads".* FROM "uploads"
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:07:06 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b4409f9f8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-56ml2j>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b4409f9d0 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1sykrh2>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:07:06.558457"], ["updated_at", "2014-07-21 20:07:06.558457"]]
+  [1m[36m (18.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 36770ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.0ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:10:01 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b34f7f820 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-r2heh1>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b34f7f7f8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-jbq99y>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:10:01.471976"], ["updated_at", "2014-07-21 20:10:01.471976"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 33196ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.3ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:14:46 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b35abcbc0 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-py0npa>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b35abcb98 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-13nvhc2>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:14:46.739484"], ["updated_at", "2014-07-21 20:14:46.739484"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 31714ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.3ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:18:20 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b35225160 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1xqqvnp>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b35225138 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-185vnfh>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:18:20.993825"], ["updated_at", "2014-07-21 20:18:20.993825"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 26048ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (160.2ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:28:43 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b34eef0e0 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1xiayf0>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b34eef0b8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1r069i7>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:28:43.684696"], ["updated_at", "2014-07-21 20:28:43.684696"]]
+  [1m[36m (52.8ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 30708ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (188.3ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:29:44 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b3574e4e8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-1kt0tws>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b3574e4c0 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-15cqyfw>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:29:45.201600"], ["updated_at", "2014-07-21 20:29:45.201600"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 25713ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.4ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:31:16 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f8b34f8f6a8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-91w2u0>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f8b34f8f680 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-1809-7lwncj>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:31:16.499265"], ["updated_at", "2014-07-21 20:31:16.499265"]]
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:37:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007fb6bb0bb1d8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-8198-13ec8uf>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007fb6bb0bb1b0 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-8198-unckrs>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.5ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:37:26.434822"], ["updated_at", "2014-07-21 20:37:26.434822"]]
+  [1m[36m (12.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1670ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:17:in `block in process_data'
+  lib/pdf_process/process.rb:16:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.7ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:38:14 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007fb6bd552ac8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-8198-yfc12i>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007fb6bd552a50 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-8198-1dsqhmc>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:38:14.158486"], ["updated_at", "2014-07-21 20:38:14.158486"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 625ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:17:in `block in process_data'
+  lib/pdf_process/process.rb:16:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:38:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f335263af60 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-1fk4wfv>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f335263af10 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-16bhv03>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:38:45.199316"], ["updated_at", "2014-07-21 20:38:45.199316"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 655ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:18:in `block in process_data'
+  lib/pdf_process/process.rb:17:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.1ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:39:10 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f335427cc78 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-3hfj73>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f335427cc50 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-5d38v1>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:39:10.238145"], ["updated_at", "2014-07-21 20:39:10.238145"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 666ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:18:in `block in process_data'
+  lib/pdf_process/process.rb:17:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.2ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:39:34 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f33526e5a28 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-wwdn2m>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f33526e59d8 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-1ckwz5r>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:39:34.664261"], ["updated_at", "2014-07-21 20:39:34.664261"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 706ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2014-07-21 16:40:02 -0400
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26qgkr8sXM9wn/l3ItwEji+XknYvPT6t6ISZp7PB/xM=", "upload"=>{"files"=>[#<ActionDispatch::Http::UploadedFile:0x007f3354711900 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-jcst9f>, @original_filename="010-carreras_y_programas_ingenieria_mecatronica.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"010-carreras_y_programas_ingenieria_mecatronica.pdf\"\r\nContent-Type: application/pdf\r\n">, #<ActionDispatch::Http::UploadedFile:0x007f3354711888 @tempfile=#<Tempfile:/tmp/RackMultipart20140721-9964-ab0ybb>, @original_filename="012-carreras_y_programas_ingenieria_software.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload[files][]\"; filename=\"012-carreras_y_programas_ingenieria_software.pdf\"\r\nContent-Type: application/pdf\r\n">]}, "commit"=>"Upload"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 20:40:03.011961"], ["updated_at", "2014-07-21 20:40:03.011961"]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 29861ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv/1.csv):
+  lib/pdf_process/process.rb:15:in `block in process_data'
+  lib/pdf_process/process.rb:14:in `process_data'
+  app/models/upload.rb:18:in `process_data'
+  app/controllers/uploads_controller.rb:14:in `block (2 levels) in create'
+  app/controllers/uploads_controller.rb:14:in `each'
+  app/controllers/uploads_controller.rb:14:in `block in create'
+  app/controllers/uploads_controller.rb:12:in `create'
+
+
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ernest/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.7ms)
+
+
+Started GET "/admin/careers/new" for 127.0.0.1 at 2014-07-21 16:47:07 -0400
+Processing by Admin::CareersController#new as HTML
+  Rendered admin/careers/new.html.slim within layouts/application (1397.4ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = '0b8f31631711b6e205ad7a832cc767ca' LIMIT 1
+  Rendered layouts/_header.html.slim (13.1ms)
+  Rendered layouts/_footer.html.slim (2.7ms)
+Completed 200 OK in 4686ms (Views: 4645.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/admin/careers.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/admin/careers.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:13 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:14 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:14 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 16:47:14 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-21 16:47:14 -0400

@@ -1,5 +1,6 @@
 class Upload < ActiveRecord::Base
   mount_uploader :attachment, AttachmentUploader
+  after_save     :process_data
 
   def to_jq_upload
   {
@@ -10,4 +11,10 @@ class Upload < ActiveRecord::Base
     "delete_type" => "DELETE"
   }
   end
+
+  private
+    def process_data
+      process=PdfProcess::Process.new (self)
+      process.process_data
+    end
 end

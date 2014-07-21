@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :careers
+  end
+
   root 'home#index'
   resources :uploads, only: [:index, :new, :create, :destroy]
   resources :users, only: [:new, :create, :destroy]
   resources :careers
-  match '/careers/:code', to: 'careers#show',   via: 'get'
   resources :students
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'users#new',            via: 'get'
