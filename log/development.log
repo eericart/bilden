@@ -86360,3 +86360,1913 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-19 21:15:56
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-19 21:15:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-20 11:14:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (165.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (12.1ms)
+  Rendered layouts/_footer.html.slim (2.1ms)
+Completed 200 OK in 4129ms (Views: 4099.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.2ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:08 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-20 11:14:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1[0m
+  Rendered layouts/_header.html.slim (1.0ms)
+  Rendered layouts/_footer.html.slim (0.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custume.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery-fileupload/jquery.fileupload.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery-fileupload/basic.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/jquery-fileupload/vendor/tmpl.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/home-image.jpg" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/intec.jpg" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/graduacion.jpg" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-07-20 11:15:20 -0400
+
+
+Started GET "/assets/pensum.jpg" for 127.0.0.1 at 2014-07-20 11:15:21 -0400
+  [1m[36mUpload Load (64.6ms)[0m  [1mSELECT "uploads".* FROM "uploads"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 15:52:52.063128"], ["updated_at", "2014-07-21 15:52:52.063128"]]
+  [1m[35m (317.3ms)[0m  commit transaction
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT  "uploads".* FROM "uploads"   ORDER BY "uploads"."id" ASC LIMIT 1[0m
+  [1m[35mUpload Load (0.7ms)[0m  SELECT  "uploads".* FROM "uploads"   ORDER BY "uploads"."id" ASC LIMIT 1
+  [1m[36mSQL (278.2ms)[0m  [1mDELETE FROM "uploads" WHERE "uploads"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mUpload Load (0.5ms)[0m  SELECT  "uploads".* FROM "uploads"   ORDER BY "uploads"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT  "uploads".* FROM "uploads"   ORDER BY "uploads"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "uploads" ("attachment", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["created_at", "2014-07-21 16:18:18.460952"], ["updated_at", "2014-07-21 16:18:18.460952"]]
+  [1m[35m (310.2ms)[0m  commit transaction
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT  "uploads".* FROM "uploads"   ORDER BY "uploads"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT  "uploads".* FROM "uploads"  WHERE "uploads"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (1.2ms)[0m  UPDATE "uploads" SET "attachment" = ?, "updated_at" = ? WHERE "uploads"."id" = 2  [["attachment", nil], ["updated_at", "2014-07-21 16:18:47.609027"]]
+  [1m[36m (222.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUpload Load (0.4ms)[0m  [1mSELECT  "uploads".* FROM "uploads"  WHERE "uploads"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (1.0ms)[0m  UPDATE "uploads" SET "attachment" = ?, "updated_at" = ? WHERE "uploads"."id" = 2  [["attachment", "010-carreras_y_programas_ingenieria_mecatronica.pdf"], ["updated_at", "2014-07-21 16:20:32.997162"]]
+  [1m[36m (265.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (29.0ms)[0m  [1mINSERT INTO "career_subjects" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-07-21 16:54:31.992143"], ["updated_at", "2014-07-21 16:54:31.992143"]]
+  [1m[35m (319.1ms)[0m  commit transaction
+  [1m[36mCareer Load (0.5ms)[0m  [1mSELECT "careers".* FROM "careers"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCareer Exists (33.6ms)[0m  [1mSELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.4ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1
+  [1m[36mSQL (21.0ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 16:57:47.205974"], ["updated_at", "2014-07-21 16:57:47.205974"]]
+  [1m[35m (236.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.9ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mCareer Load (85.4ms)[0m  SELECT  "careers".* FROM "careers"   ORDER BY "careers"."code" ASC LIMIT 1
+  [1m[36mCareerSubject Load (0.4ms)[0m  [1mSELECT  "career_subjects".* FROM "career_subjects"   ORDER BY "career_subjects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mUPDATE "career_subjects" SET "career_code" = ?, "updated_at" = ? WHERE "career_subjects"."id" = 1[0m  [["career_code", "ids"], ["updated_at", "2014-07-21 17:20:41.169381"]]
+  [1m[35m (295.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("code", "created_at", "credits", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["code", "AHC101"], ["created_at", "2014-07-21 17:37:58.071825"], ["credits", 4], ["name", "COMUNICACIÓN EN LENGUA ESPAÑOLA I"], ["updated_at", "2014-07-21 17:37:58.071825"]]
+  [1m[36m (244.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (235.1ms)[0m  DELETE FROM "subjects" WHERE "subjects"."id" = 3
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "subjects" ("code", "created_at", "credits", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["code", "AHC101"], ["created_at", "2014-07-21 17:38:51.107280"], ["credits", 4], ["name", "COMUNICACIÓN EN LENGUA ESPAÑOLA I"], ["updated_at", "2014-07-21 17:38:51.107280"]]
+  [1m[35m (230.1ms)[0m  commit transaction
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."code" = 'AHC101' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE "career_subjects" SET "subject_id" = ?, "updated_at" = ? WHERE "career_subjects"."id" = 1[0m  [["subject_id", 4], ["updated_at", "2014-07-21 17:40:05.987660"]]
+  [1m[35m (225.3ms)[0m  commit transaction
+  [1m[36mSubject Load (0.8ms)[0m  [1mSELECT  "subjects".* FROM "subjects"   ORDER BY "subjects"."id" ASC LIMIT 1[0m
+  [1m[35mCareerSubject Load (0.4ms)[0m  SELECT  "career_subjects".* FROM "career_subjects"   ORDER BY "career_subjects"."id" ASC LIMIT 1
+  [1m[36mCareer Load (16.9ms)[0m  [1mSELECT  "careers".* FROM "careers"   ORDER BY "careers"."code" ASC LIMIT 1[0m
+  [1m[35mCareerSubject Load (0.5ms)[0m  SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36mCareerSubject Load (0.7ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[35m (0.5ms)[0m  SELECT "career_subjects".id FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".id FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36m (207.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (232.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140706032552)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706032552"]]
+  [1m[35m (241.7ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20140706222251)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706222251"]]
+  [1m[35m (237.5ms)[0m  commit transaction
+Migrating to AddRememberTokenToUsers (20140706224125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "remember_token" varchar(255)
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706224125"]]
+  [1m[35m (219.3ms)[0m  commit transaction
+Migrating to RemovePasswordToUsers (20140706233743)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_ausers_on_remember_token" ON "ausers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706233743"]]
+  [1m[36m (207.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20140707015701)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140707015701"]]
+  [1m[36m (235.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCareers (20140715230228)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "careers" ("name" varchar(255), "max_credits" integer, "code" varchar(3) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140715230228"]]
+  [1m[36m (229.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20140715231009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715231009"]]
+  [1m[35m (358.2ms)[0m  commit transaction
+Migrating to AddCareerRefToSubjects (20140715232254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "subjects" ADD "career_id" integer
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_career_id" ON "subjects" ("career_id")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715232254"]]
+  [1m[35m (309.1ms)[0m  commit transaction
+Migrating to CreateCareerSubjects (20140716154526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "career_subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "career_code_id" integer, "subject_id" integer, "subject_prerequisite_id" integer, "credits_prerequisite" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_career_code_id" ON "career_subjects" ("career_code_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_id" ON "career_subjects" ("subject_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_career_subjects_on_subject_prerequisite_id" ON "career_subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716154526"]]
+  [1m[35m (261.4ms)[0m  commit transaction
+Migrating to AddTrimesterNumberToCareerSubject (20140716160035)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  ALTER TABLE "career_subjects" ADD "trimester_number" integer
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160035"]]
+  [1m[35m (246.5ms)[0m  commit transaction
+Migrating to RemoveCareerIdToSubjects (20140716160636)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime, "career_id" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_career_id" ON "asubjects" ("career_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (4.2ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160636"]]
+  [1m[36m (264.7ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveSubjectPrerequisiteToSubjects (20140716160929)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (1.5ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160929"]]
+  [1m[36m (257.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUploads (20140716213104)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716213104"]]
+  [1m[36m (224.2ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveNameToUploads (20140716221649)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "auploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "uploads"
+  [1m[36m (3.4ms)[0m  [1mDROP TABLE "uploads"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "auploads"[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "auploads"
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716221649"]]
+  [1m[35m (226.5ms)[0m  commit transaction
+Migrating to CreateUsersSubjects (20140719224305)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "subjects_users" ("subject_id" integer, "user_id" integer) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140719224305"]]
+  [1m[35m (229.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_code_id' AND type='index'
+
+  [1m[36m (1.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('email@student.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 17:54:28.589115"], ["email", "email@student.com"], ["first_name", "Ejemplo"], ["password_digest", "$2a$10$iYvy1Y9cwjuN2VO/xfEqcexf8AJHRjbO.XD3Mj01rP2tseW2jb5US"], ["remember_token", "441ada502bbac55cb99894bb45753195"], ["type", "Student"], ["updated_at", "2014-07-21 17:54:28.589115"]]
+  [1m[36m (248.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest@admin.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 17:54:29.070055"], ["email", "ernest@admin.com"], ["first_name", "Admin"], ["password_digest", "$2a$10$wdE8wOAd1YZgEeceKY69iOGIM2CwyvyHeP4PviGvWH77xPxIbUr/K"], ["remember_token", "77fbbb2bfac8efe997f2af811e79570e"], ["type", "Admin"], ["updated_at", "2014-07-21 17:54:29.070055"]]
+  [1m[36m (247.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.5ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('IDS') LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 17:58:03.937291"], ["updated_at", "2014-07-21 17:58:03.937291"]]
+  [1m[35m (231.7ms)[0m  commit transaction
+  [1m[36mCareer Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "careers"  WHERE (LOWER("careers"."code") = LOWER('ids') AND "careers"."code" != 'ids') LIMIT 1[0m
+  [1m[35mCareerSubject Load (1.1ms)[0m  SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36mCareerSubject Load (1.1ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[35mCareer Load (0.8ms)[0m  SELECT  "careers".* FROM "careers"   ORDER BY "careers"."code" ASC LIMIT 1
+  [1m[36mCareerSubject Load (2.2ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36m (218.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (214.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140706032552)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706032552"]]
+  [1m[35m (260.2ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20140706222251)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706222251"]]
+  [1m[35m (234.8ms)[0m  commit transaction
+Migrating to AddRememberTokenToUsers (20140706224125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "remember_token" varchar(255)
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706224125"]]
+  [1m[35m (228.1ms)[0m  commit transaction
+Migrating to RemovePasswordToUsers (20140706233743)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "tindex_ausers_on_remember_token" ON "ausers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (1.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706233743"]]
+  [1m[36m (250.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20140707015701)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mALTER TABLE "users" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140707015701"]]
+  [1m[36m (226.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCareers (20140715230228)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "careers" ("name" varchar(255), "max_credits" integer, "code" varchar(3) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140715230228"]]
+  [1m[36m (253.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20140715231009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715231009"]]
+  [1m[35m (226.3ms)[0m  commit transaction
+Migrating to AddCareerRefToSubjects (20140715232254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "subjects" ADD "career_id" integer
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_subjects_on_career_id" ON "subjects" ("career_id")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715232254"]]
+  [1m[35m (271.6ms)[0m  commit transaction
+Migrating to CreateCareerSubjects (20140716154526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "career_subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "career_id" integer, "subject_id" integer, "subject_prerequisite_id" integer, "credits_prerequisite" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_career_id" ON "career_subjects" ("career_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_id" ON "career_subjects" ("subject_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_career_subjects_on_subject_prerequisite_id" ON "career_subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716154526"]]
+  [1m[35m (258.3ms)[0m  commit transaction
+Migrating to AddTrimesterNumberToCareerSubject (20140716160035)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "career_subjects" ADD "trimester_number" integer
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160035"]]
+  [1m[35m (243.1ms)[0m  commit transaction
+Migrating to RemoveCareerIdToSubjects (20140716160636)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime, "career_id" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_career_id" ON "asubjects" ("career_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160636"]]
+  [1m[36m (206.8ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveSubjectPrerequisiteToSubjects (20140716160929)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (4.8ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (1.8ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160929"]]
+  [1m[36m (248.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUploads (20140716213104)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716213104"]]
+  [1m[36m (211.8ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveNameToUploads (20140716221649)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "auploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "uploads"
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "uploads"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "auploads"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "auploads"
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716221649"]]
+  [1m[35m (203.3ms)[0m  commit transaction
+Migrating to CreateUsersSubjects (20140719224305)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "subjects_users" ("subject_id" integer, "user_id" integer) 
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140719224305"]]
+  [1m[35m (232.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (14.6ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('email@student.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:00:33.089564"], ["email", "email@student.com"], ["first_name", "Ejemplo"], ["password_digest", "$2a$10$NyzbzjaiC/kOQFl0.5AJ3u4RW0sYN7m77aJwv/UZNR..4OH58lCOe"], ["remember_token", "0b8200bc853d2cc5c7e5a95e006b19aa"], ["type", "Student"], ["updated_at", "2014-07-21 18:00:33.089564"]]
+  [1m[36m (223.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (2.7ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest@admin.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:00:33.537993"], ["email", "ernest@admin.com"], ["first_name", "Admin"], ["password_digest", "$2a$10$P8QU2SuuEvXHzq.GxEQhnOa8vRvVoyjLACT0zggMkbic5rgKuFwqa"], ["remember_token", "bcbeaed0661916358f0915e6e8117ca8"], ["type", "Admin"], ["updated_at", "2014-07-21 18:00:33.537993"]]
+  [1m[36m (253.6ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (1.1ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('IDS') LIMIT 1
+  [1m[36mSQL (10.4ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 18:01:07.275372"], ["updated_at", "2014-07-21 18:01:07.275372"]]
+  [1m[35m (226.4ms)[0m  commit transaction
+  [1m[36mCareerSubject Load (0.4ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [["career_id", 0]]
+  [1m[35mCareer Load (0.6ms)[0m  SELECT  "careers".* FROM "careers"  WHERE "careers"."code" = ? LIMIT 1  [["code", "ids"]]
+  [1m[36mCareer Load (0.9ms)[0m  [1mSELECT "careers".* FROM "careers"[0m
+  [1m[35mCareerSubject Load (0.4ms)[0m  SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?  [["career_id", 0]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "career_subjects" ("career_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["career_id", 0], ["created_at", "2014-07-21 18:07:53.099671"], ["updated_at", "2014-07-21 18:07:53.099671"]]
+  [1m[36m (231.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (202.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (231.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140706032552)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706032552"]]
+  [1m[35m (232.7ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20140706222251)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706222251"]]
+  [1m[35m (262.2ms)[0m  commit transaction
+Migrating to AddRememberTokenToUsers (20140706224125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "users" ADD "remember_token" varchar(255)
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706224125"]]
+  [1m[35m (246.1ms)[0m  commit transaction
+Migrating to RemovePasswordToUsers (20140706233743)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_ausers_on_remember_token" ON "ausers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (31.8ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706233743"]]
+  [1m[36m (252.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20140707015701)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "users" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140707015701"]]
+  [1m[36m (236.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCareers (20140715230228)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "careers" ("name" varchar(255), "max_credits" integer, "code" varchar(3) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140715230228"]]
+  [1m[36m (257.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20140715231009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715231009"]]
+  [1m[35m (217.0ms)[0m  commit transaction
+Migrating to AddCareerRefToSubjects (20140715232254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  ALTER TABLE "subjects" ADD "career_id" integer
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_career_id" ON "subjects" ("career_id")
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715232254"]]
+  [1m[35m (267.8ms)[0m  commit transaction
+Migrating to CreateCareerSubjects (20140716154526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "career_subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "career_code" varchar(255), "subject_id" integer, "subject_prerequisite_id" integer, "credits_prerequisite" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_id" ON "career_subjects" ("subject_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_prerequisite_id" ON "career_subjects" ("subject_prerequisite_id")[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716154526"]]
+  [1m[36m (246.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddTrimesterNumberToCareerSubject (20140716160035)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "career_subjects" ADD "trimester_number" integer[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160035"]]
+  [1m[36m (241.4ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveCareerIdToSubjects (20140716160636)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime, "career_id" integer) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "tindex_asubjects_on_career_id" ON "asubjects" ("career_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")
+  [1m[36m (0.8ms)[0m  [1mSELECT * FROM "subjects"[0m
+  [1m[35m (4.6ms)[0m  DROP TABLE "subjects"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asubjects"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "asubjects"
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160636"]]
+  [1m[35m (248.7ms)[0m  commit transaction
+Migrating to RemoveSubjectPrerequisiteToSubjects (20140716160929)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "subjects"[0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "subjects"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asubjects"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "asubjects"
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160929"]]
+  [1m[35m (216.2ms)[0m  commit transaction
+Migrating to CreateUploads (20140716213104)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716213104"]]
+  [1m[35m (241.0ms)[0m  commit transaction
+Migrating to RemoveNameToUploads (20140716221649)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "auploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "uploads"[0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "uploads"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "auploads"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "auploads"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716221649"]]
+  [1m[36m (238.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsersSubjects (20140719224305)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "subjects_users" ("subject_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140719224305"]]
+  [1m[36m (261.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('email@student.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:09:58.742643"], ["email", "email@student.com"], ["first_name", "Ejemplo"], ["password_digest", "$2a$10$vzstZeEnqd7/hPAg8xN4AO/7S0zuUbaSS0o5haxADVr7r5PJxnWni"], ["remember_token", "0af07911c57c00fe5028909687dd16fc"], ["type", "Student"], ["updated_at", "2014-07-21 18:09:58.742643"]]
+  [1m[36m (261.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest@admin.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:09:59.153099"], ["email", "ernest@admin.com"], ["first_name", "Admin"], ["password_digest", "$2a$10$hWfeWJio66.26VcV4rTg7eiYL8.9QoH6/yjhMbl0A.FcG6OiVj3Hi"], ["remember_token", "731221fff4f1e72590ca7edb19fa88bf"], ["type", "Admin"], ["updated_at", "2014-07-21 18:09:59.153099"]]
+  [1m[36m (238.9ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (1.3ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 18:10:27.473813"], ["updated_at", "2014-07-21 18:10:27.473813"]]
+  [1m[35m (237.4ms)[0m  commit transaction
+  [1m[36mCareerSubject Load (0.6ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [[nil, "ids"]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36m (195.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (231.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140706032552)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706032552"]]
+  [1m[35m (219.8ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20140706222251)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706222251"]]
+  [1m[35m (232.7ms)[0m  commit transaction
+Migrating to AddRememberTokenToUsers (20140706224125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "remember_token" varchar(255)
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706224125"]]
+  [1m[35m (247.3ms)[0m  commit transaction
+Migrating to RemovePasswordToUsers (20140706233743)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_ausers_on_remember_token" ON "ausers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706233743"]]
+  [1m[36m (204.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20140707015701)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "users" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140707015701"]]
+  [1m[36m (234.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCareers (20140715230228)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "careers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "max_credits" integer, "code" varchar(3) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140715230228"]]
+  [1m[36m (259.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20140715231009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715231009"]]
+  [1m[35m (205.9ms)[0m  commit transaction
+Migrating to AddCareerRefToSubjects (20140715232254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  ALTER TABLE "subjects" ADD "career_id" integer
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX "index_subjects_on_career_id" ON "subjects" ("career_id")
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715232254"]]
+  [1m[35m (226.5ms)[0m  commit transaction
+Migrating to CreateCareerSubjects (20140716154526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "career_subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "career_code" varchar(255), "subject_id" integer, "subject_prerequisite_id" integer, "credits_prerequisite" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_id" ON "career_subjects" ("subject_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_prerequisite_id" ON "career_subjects" ("subject_prerequisite_id")[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716154526"]]
+  [1m[36m (265.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddTrimesterNumberToCareerSubject (20140716160035)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.9ms)[0m  [1mALTER TABLE "career_subjects" ADD "trimester_number" integer[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160035"]]
+  [1m[36m (235.0ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveCareerIdToSubjects (20140716160636)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime, "career_id" integer) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "tindex_asubjects_on_career_id" ON "asubjects" ("career_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "subjects"[0m
+  [1m[35m (6.7ms)[0m  DROP TABLE "subjects"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asubjects"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "asubjects"
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160636"]]
+  [1m[35m (222.9ms)[0m  commit transaction
+Migrating to RemoveSubjectPrerequisiteToSubjects (20140716160929)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "subjects"[0m
+  [1m[35m (2.9ms)[0m  DROP TABLE "subjects"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asubjects"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "asubjects"
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160929"]]
+  [1m[35m (614.4ms)[0m  commit transaction
+Migrating to CreateUploads (20140716213104)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716213104"]]
+  [1m[35m (247.2ms)[0m  commit transaction
+Migrating to RemoveNameToUploads (20140716221649)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "auploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "uploads"[0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "uploads"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "auploads"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "auploads"[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716221649"]]
+  [1m[36m (251.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsersSubjects (20140719224305)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "subjects_users" ("subject_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140719224305"]]
+  [1m[36m (246.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (1.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('email@student.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:12:27.643423"], ["email", "email@student.com"], ["first_name", "Ejemplo"], ["password_digest", "$2a$10$eX8AkZMCmhPsfbpiWDl/eOHH67Qa6q1pRi6aDxKs5y7tj0uqJDbrW"], ["remember_token", "50513fa18526a61bec0561dc71788f55"], ["type", "Student"], ["updated_at", "2014-07-21 18:12:27.643423"]]
+  [1m[36m (272.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest@admin.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:12:28.068971"], ["email", "ernest@admin.com"], ["first_name", "Admin"], ["password_digest", "$2a$10$dVJdh8S7in3TSYfhn.rfdeDQ0X1sT90pD/oA5rlFpfxcKDiyHweJ2"], ["remember_token", "dea39ee6d6e0d395687fe864520b178e"], ["type", "Admin"], ["updated_at", "2014-07-21 18:12:28.068971"]]
+  [1m[36m (247.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.3ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 18:12:47.574958"], ["updated_at", "2014-07-21 18:12:47.574958"]]
+  [1m[35m (301.1ms)[0m  commit transaction
+  [1m[36mCareerSubject Load (0.5ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: career_subjects.career_id: SELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?
+  [1m[36m (214.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (219.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140706032552)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706032552"]]
+  [1m[35m (208.8ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20140706222251)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706222251"]]
+  [1m[35m (231.5ms)[0m  commit transaction
+Migrating to AddRememberTokenToUsers (20140706224125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ADD "remember_token" varchar(255)
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140706224125"]]
+  [1m[35m (234.7ms)[0m  commit transaction
+Migrating to RemovePasswordToUsers (20140706233743)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "password" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "tindex_ausers_on_remember_token" ON "ausers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "users"
+  [1m[36m (2.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "type" varchar(255), "career_code" varchar(255), "extra_credits" integer, "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_remember_token' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706233743"]]
+  [1m[36m (214.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20140707015701)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.4ms)[0m  [1mALTER TABLE "users" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140707015701"]]
+  [1m[36m (226.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCareers (20140715230228)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "careers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "max_credits" integer, "code" varchar(3) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140715230228"]]
+  [1m[36m (245.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20140715231009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715231009"]]
+  [1m[35m (218.8ms)[0m  commit transaction
+Migrating to AddCareerRefToSubjects (20140715232254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  ALTER TABLE "subjects" ADD "career_id" integer
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_subjects_on_career_id" ON "subjects" ("career_id")
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140715232254"]]
+  [1m[35m (258.0ms)[0m  commit transaction
+Migrating to CreateCareerSubjects (20140716154526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "career_subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "career_id" integer, "subject_id" integer, "subject_prerequisite_id" integer, "credits_prerequisite" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_career_id" ON "career_subjects" ("career_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX "index_career_subjects_on_subject_id" ON "career_subjects" ("subject_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_career_subjects_on_subject_prerequisite_id" ON "career_subjects" ("subject_prerequisite_id")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716154526"]]
+  [1m[35m (252.1ms)[0m  commit transaction
+Migrating to AddTrimesterNumberToCareerSubject (20140716160035)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  ALTER TABLE "career_subjects" ADD "trimester_number" integer
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716160035"]]
+  [1m[35m (243.9ms)[0m  commit transaction
+Migrating to RemoveCareerIdToSubjects (20140716160636)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime, "career_id" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_career_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_career_id" ON "asubjects" ("career_id")[0m
+  [1m[35m (0.8ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (1.5ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_career_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_subjects_on_subject_prerequisite_id" ON "subjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160636"]]
+  [1m[36m (219.5ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveSubjectPrerequisiteToSubjects (20140716160929)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "asubjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "subject_prerequisite_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_asubjects_on_subject_prerequisite_id" ON "asubjects" ("subject_prerequisite_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "subjects"
+  [1m[36m (1.5ms)[0m  [1mDROP TABLE "subjects"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "credits" integer, "code" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asubjects_on_subject_prerequisite_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asubjects"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "asubjects"[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716160929"]]
+  [1m[36m (211.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUploads (20140716213104)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716213104"]]
+  [1m[36m (256.9ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveNameToUploads (20140716221649)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "auploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "uploads"
+  [1m[36m (1.5ms)[0m  [1mDROP TABLE "uploads"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "uploads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "attachment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "auploads"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "auploads"
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716221649"]]
+  [1m[35m (214.9ms)[0m  commit transaction
+Migrating to CreateUsersSubjects (20140719224305)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "subjects_users" ("subject_id" integer, "user_id" integer) 
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140719224305"]]
+  [1m[35m (257.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_prerequisite_id' AND type='index'
+
+  [1m[36m (0.7ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_subject_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_career_subjects_on_career_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (1.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('email@student.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:13:48.641831"], ["email", "email@student.com"], ["first_name", "Ejemplo"], ["password_digest", "$2a$10$sG9dG97G8vmOn347pbS4IOJu7c9h2raiMbXUmg.lr4FEyI5Fz04Z."], ["remember_token", "15af2315cf8db006a8b92bb6c982d346"], ["type", "Student"], ["updated_at", "2014-07-21 18:13:48.641831"]]
+  [1m[36m (249.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest@admin.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "password_digest", "remember_token", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-21 18:13:49.056853"], ["email", "ernest@admin.com"], ["first_name", "Admin"], ["password_digest", "$2a$10$BmRHSA9RIXs9fACvD0gNwutXbK7MeZXXRkFtxtN9zYM.H5/ixdPVi"], ["remember_token", "ed34c9c19e36bcbd39b06571ee1bfdae"], ["type", "Admin"], ["updated_at", "2014-07-21 18:13:49.056853"]]
+  [1m[36m (258.5ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCareer Exists (0.3ms)[0m  SELECT  1 AS one FROM "careers"  WHERE LOWER("careers"."code") = LOWER('ids') LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "careers" ("code", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["code", "ids"], ["created_at", "2014-07-21 18:14:47.240179"], ["updated_at", "2014-07-21 18:14:47.240179"]]
+  [1m[35m (279.4ms)[0m  commit transaction
+  [1m[36mCareerSubject Load (0.4ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [["career_id", 1]]
+  [1m[35mCareer Load (0.3ms)[0m  SELECT  "careers".* FROM "careers"   ORDER BY "careers"."id" ASC LIMIT 1
+  [1m[36mCareerSubject Load (0.4ms)[0m  [1mSELECT  "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?  ORDER BY "career_subjects"."id" ASC LIMIT 1[0m  [["career_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "career_subjects" ("career_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["career_id", 1], ["created_at", "2014-07-21 18:16:43.183211"], ["updated_at", "2014-07-21 18:16:43.183211"]]
+  [1m[35m (230.2ms)[0m  commit transaction
+  [1m[36mCareerSubject Load (0.5ms)[0m  [1mSELECT "career_subjects".* FROM "career_subjects"  WHERE "career_subjects"."career_id" = ?[0m  [["career_id", 1]]

@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140719224305) do
 
   create_table "career_subjects", force: true do |t|
-    t.string   "career_code"
+    t.integer  "career_id"
     t.integer  "subject_id"
     t.integer  "subject_prerequisite_id"
     t.integer  "credits_prerequisite",    default: 0
@@ -23,10 +23,11 @@ ActiveRecord::Schema.define(version: 20140719224305) do
     t.integer  "trimester_number"
   end
 
+  add_index "career_subjects", ["career_id"], name: "index_career_subjects_on_career_id"
   add_index "career_subjects", ["subject_id"], name: "index_career_subjects_on_subject_id"
   add_index "career_subjects", ["subject_prerequisite_id"], name: "index_career_subjects_on_subject_prerequisite_id"
 
-  create_table "careers", id: false, force: true do |t|
+  create_table "careers", force: true do |t|
     t.string   "name"
     t.integer  "max_credits"
     t.string   "code",        limit: 3, null: false
