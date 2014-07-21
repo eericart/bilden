@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140719224305) do
+ActiveRecord::Schema.define(version: 20140721184134) do
 
   create_table "career_subjects", force: true do |t|
     t.integer  "career_id"
     t.integer  "subject_id"
-    t.integer  "subject_prerequisite_id"
-    t.integer  "credits_prerequisite",    default: 0
+    t.integer  "credits_prerequisite", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "trimester_number"
@@ -25,7 +24,13 @@ ActiveRecord::Schema.define(version: 20140719224305) do
 
   add_index "career_subjects", ["career_id"], name: "index_career_subjects_on_career_id"
   add_index "career_subjects", ["subject_id"], name: "index_career_subjects_on_subject_id"
-  add_index "career_subjects", ["subject_prerequisite_id"], name: "index_career_subjects_on_subject_prerequisite_id"
+
+  create_table "career_subjects_subjects", force: true do |t|
+    t.integer "subject_id"
+    t.integer "career_subject_id"
+  end
+
+  add_index "career_subjects_subjects", ["subject_id"], name: "index_career_subjects_subjects_on_subject_id"
 
   create_table "careers", force: true do |t|
     t.string   "name"

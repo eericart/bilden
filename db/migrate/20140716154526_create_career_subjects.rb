@@ -3,7 +3,6 @@ class CreateCareerSubjects < ActiveRecord::Migration
     create_table :career_subjects do |t|
       t.references :career, index: true
       t.references :subject, index: true
-      t.references :subject_prerequisite, index: true
       t.integer :credits_prerequisite, :default => 0
 
       t.timestamps
