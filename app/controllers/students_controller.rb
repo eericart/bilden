@@ -1,18 +1,25 @@
 class StudentsController < ApplicationController
   before_action :signed_in_user
-  before_action :set_student
+  before_action :correct_user
+  before_action :admin_sign_in
 
-  def index
-  end
+
   def show
   end
 
   private
     def signed_in_user
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
+      unless signed_in?
+        store_location
+        redirect_to signin_url, notice: "Please sign in."
+      end
     end
 
-    def set_student
-      @student = current_user
+    def correct_user
+      @student = User.find(params[:id])
+      redirect_to(root_url) unless current_user? @student
+    end
+    def admin_sign_in
+      redirect_to root_path if current_user.admin?
     end
 end

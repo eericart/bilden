@@ -1,7 +1,20 @@
 <h1>Bilden home</h1>
 <p>Welcome</p>
 
-<%= render @student%>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Career:</strong>
+  <%= @student.career_code%>
+  <%= @student.career_name%>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.first_name %>
+</p>
+
+
 
 
 <%= link_to 'What to take next?', @student %>
