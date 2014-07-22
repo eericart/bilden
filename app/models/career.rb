@@ -4,4 +4,8 @@ class Career < ActiveRecord::Base
 
   has_many :career_subjects
   has_many :students
+
+ def pensum
+   self.career_subjects.all.map(&:subject)
+   end
 end

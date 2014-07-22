@@ -24,6 +24,8 @@ Rails.application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/dash-student', to: 'students#show',   via: 'get'
   match '/uploads/new', to: 'uploads#new', via:'post'
+  match '/signup/step2', to: 'users#record', via:'get'
+  match '/signup/step2', to: 'users#record', via:'post'
 
   resources :records, only: [:index, :new, :create, :show]
   #Why cannot use

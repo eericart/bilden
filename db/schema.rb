@@ -14,17 +14,16 @@
 ActiveRecord::Schema.define(version: 20140721223520) do
 
   create_table "career_subjects", force: true do |t|
-    t.string   "career_code"
+    t.integer  "career_id"
     t.integer  "subject_id"
-    t.integer  "subject_prerequisite_id"
-    t.integer  "credits_prerequisite",    default: 0
+    t.integer  "credits_prerequisite", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "trimester_number"
   end
 
+  add_index "career_subjects", ["career_id"], name: "index_career_subjects_on_career_id"
   add_index "career_subjects", ["subject_id"], name: "index_career_subjects_on_subject_id"
-  add_index "career_subjects", ["subject_prerequisite_id"], name: "index_career_subjects_on_subject_prerequisite_id"
 
   create_table "career_subjects_subjects", force: true do |t|
     t.integer "subject_id"
@@ -33,21 +32,13 @@ ActiveRecord::Schema.define(version: 20140721223520) do
 
   add_index "career_subjects_subjects", ["subject_id"], name: "index_career_subjects_subjects_on_subject_id"
 
-  create_table "careers", id: false, force: true do |t|
+  create_table "careers", force: true do |t|
     t.string   "name"
     t.integer  "max_credits"
     t.string   "code",        limit: 3, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "students_subjects", force: true do |t|
-    t.integer "user_id"
-    t.integer "subjects_id"
-  end
-
-  add_index "students_subjects", ["subjects_id"], name: "index_students_subjects_on_subjects_id"
-  add_index "students_subjects", ["user_id"], name: "index_students_subjects_on_user_id"
 
   create_table "subjects", force: true do |t|
     t.string   "name"
@@ -74,7 +65,7 @@ ActiveRecord::Schema.define(version: 20140721223520) do
     t.string   "last_name"
     t.string   "email"
     t.string   "type"
-    t.string   "career_code"
+    t.integer  "career_id"
     t.integer  "extra_credits"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -82,6 +73,7 @@ ActiveRecord::Schema.define(version: 20140721223520) do
     t.string   "password_digest"
   end
 
+  add_index "users", ["career_id"], name: "index_users_on_career_id"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 

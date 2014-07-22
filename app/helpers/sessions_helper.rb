@@ -16,9 +16,6 @@ module SessionsHelper
     @current_user = user
   end
 
-   def user_career
-        @user_career = @current_user.career_code
-    end
 
   def current_user
     remember_token = User.encrypt(cookies[:remember_token])
