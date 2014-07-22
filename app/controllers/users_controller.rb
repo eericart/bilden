@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
     if @user.save
       sign_in @user
-      redirect_to root_path,success: 'Welcome to Bilden App!'
+      redirect_to records_path,success: 'Welcome to Bilden App!'
     else
       redirect_to 'new', errors
     end

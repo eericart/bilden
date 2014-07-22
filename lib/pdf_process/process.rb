@@ -25,7 +25,7 @@ class PdfProcess::Process
 
   def convert_to_csv
     (1..2).each do |index|
-      system ("export RBENV_VERSION=jruby-1.7.12 && /opt/jruby/bin/tabula #{attachment_pdf.attachment.current_path} -o csv/#{index}.csv -n -g -p #{index}")
+      system ("rvm jruby exec ruby tabula #{attachment_pdf.attachment.current_path} -o csv/#{index}.csv -n -g -p #{index}")
     end
   end
   def delete_processed
