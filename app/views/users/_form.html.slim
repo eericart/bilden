@@ -1,0 +1,13 @@
+== bootstrap_form_for(@user) do |f|
+  == f.text_field :first_name, label:"First Name"
+  == f.text_field :last_name, label:"Last Name"
+  == f.email_field :email
+  == f.password_field :password
+  == f.password_field :password_confirmation, label: "Confirmation"
+  == f.form_group :career_code do
+    == f.select :career_code, options_from_collection_for_select(Career.all, :code, :name)
+  == f.form_group :extra_credits, label: { text: "Extra Credits:\t\t" } do
+    br
+    - (0..2).each do |value|
+      == f.radio_button :extra_credits, value,label: "#{value}", inline: true
+  == f.submit "Create my account", class: "btn btn-large btn-danger"

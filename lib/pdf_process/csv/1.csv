@@ -1,0 +1,49 @@
+"","",INGENIERÍA CIVIL (CIV),"","",""
+"","",Aprobado por la Junta de Regentes en fecha 17 de ,"","",""
+"","",agosto del 2010 y vigente a partir de agosto del 2010,"","",""
+"","","","","",Requisitos de 
+Claves ,"",Asignatura ,Créditos ,Prerrequisitos,""
+"","","","","",Crédito
+"",PRIMER TRIMESTRE,"","","",""
+AHC101  ,COMUNICACIÓN EN LENGUA ESPAÑOLA I ,"",4 ,"",0
+AHO101  ,ORIENTACIÓN ACADÉMICA E INSTITUCIONAL (1) ,"",2 ,"",0
+CBM101  ,ÁLGEBRA Y GEOMETRÍA ANALÍTICA ,"",5 ,"",0
+"",ELECTIVA SOCIO-HUMANÍSTICA (2) ,"",4 ,"",0
+"",INGLÉS (3) ,"",4 ,"",0
+"","","",19,"",""
+"",SEGUNDO TRIMESTRE,"","","",""
+AHC102  ,COMUNICACIÓN EN LENGUA ESPAÑOLA II ,"",4 ,AHC101 ,0
+AHQ101  ,QUEHACER CIENTÍFICO ,"",4 ,"",0
+CBM102  ,CÁLCULO DIFERENCIAL ,"",5 ,CBM101 ,0
+"",ELECTIVA DE ARTE O DEPORTE (2) ,"",2 ,"",0
+"",INGLÉS (3) ,"",4 ,"",0
+"","","",19,"",""
+"",TERCER TRIMESTRE,"","","",""
+CBM201  ,CÁLCULO INTEGRAL ,"",5 ,CBM102 ,0
+CBQ201  ,QUÍMICA I ,"",5 ,CBM102 ,0
+INS204  ,FUNDAMENTOS DE PROGRAMACIÓN ,"",5 ,CBM102 ,0
+"",ELECTIVA MEDIO-AMBIENTAL (2) ,"",4 ,"",0
+"","","",19,"",""
+"",CUARTO TRIMESTRE,"","","",""
+CBF201  ,FÍSICA I ,"",5 ,CBM201 ,0
+CBM202  ,CÁLCULO VECTORIAL ,"",5 ,CBM201 ,0
+CBQ202  ,QUÍMICA II ,"",5 ,CBQ201 ,0
+"",ELECTIVA HISTÓRICO-CULTURAL (2) ,"",4 ,"",0
+"","","",19,"",""
+"",QUINTO TRIMESTRE,"","","",""
+CBF202  ,FÍSICA II ,"",5 ,CBF201 ,0
+CBM203  ,ECUACIONES DIFERENCIALES ,"",5 ,CBM202 ,0
+CBM206  ,PROBABILIDAD Y ESTADÍSTICA ,"",4 ,CBM201 ,0
+ING204  ,GRÁFICOS EN INGENIERÍA ,"",4 ,"",0
+"","","",18,"",""
+"",SEXTO TRIMESTRE,"","","",""
+CBF203  ,FÍSICA III ,"",5 ,CBF202 ,0
+CBM208  ,ÁLGEBRA LINEAL ,"",5 ,CBM203 ,0
+ING205  ,ESTÁTICA ,"",4 ,CBF202 ,0
+ING210  ,INVESTIGACIÓN EN INGENIERÍA ,"",3 ,AHQ101 CBM206 ,0
+ING225  ,DIBUJO ASISTIDO POR COMPUTADORA ,"",2 ,ING204 ,0
+"","","",19,"",""
+"",SÉPTIMO TRIMESTRE,"","","",""
+INC360  ,TOPOGRAFÍA I ,"",4 ,ING225 ,0
+ING206  ,RESISTENCIA DE MATERIALES I ,"",4 ,ING205 ,0
+ING207  ,DINÁMICA ,"",4 ,ING205 ,0

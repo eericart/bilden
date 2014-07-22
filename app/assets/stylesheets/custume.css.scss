@@ -1,0 +1,113 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+//= require rails_bootstrap_forms
+
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+$grayDarker: #828282;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+input {
+    width:auto !important;
+}
+
+body {
+  padding-top: 50px;
+  padding-left: 3em;
+}
+
+body div {
+    padding-left: 2em;
+}
+
+.form-control {
+    min-width:255px;
+    max-width:50%;
+}
+
+.container-fluid {
+    width: 50% !important;
+}
+
+#disabled {
+    background-color:#e6e6e6 !important;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+body {
+   a {
+      color: #8B0709;
+      &:hover, &:focus {
+        color: #CB0711;}}
+}
+
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $grayMediumLight;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}

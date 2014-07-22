@@ -1,0 +1,3 @@
+== bootstrap_form_for     @upload = Upload.new,html: { multipart: true, :id => "fileupload"} do |f|
+  == f.file_field :files, multiple: true, id: 'upload-field'
+  == f.submit "Upload", class: "btn btn-primary"
