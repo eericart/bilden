@@ -1,8 +1,1 @@
-<ul>
-  <% @user.career.pensum.each do |role| %>
-      <li>
-        <%= check_box_tag 'subject_ids[]', subject.id %>
-        <%= role.subject_ids %>
-      </li>
-  <% end %>
-</ul>
+<%= render 'recordform'%>

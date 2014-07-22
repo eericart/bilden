@@ -21,7 +21,7 @@ gem 'carrierwave'
 gem 'jdbc-sqlite3'
 gem 'tabula-extractor'
 gem 'webrick', '~> 1.3.1', group: :development
-
+gem 'puma'
 
 # Use unicorn as the app server
 # gem 'unicorn'

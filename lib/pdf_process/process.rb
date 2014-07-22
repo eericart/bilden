@@ -26,7 +26,7 @@ class PdfProcess::Process
 
   def convert_to_csv
     (1..2).each do |index|
-      %x(bash -c 'jruby /opt/jruby/bin/tabula /public/uploads/pdf/attachment/005-carreras_y_programas_ingenieria_civil.pdf -p -#{index}-o lib/pdf_process/csv/#{index}.csv' )
+    system "jruby /opt/jruby/bin/tabula #{attachment_pdf.attachment.current_path} -p #{index} -o lib/pdf_process/csv/#{index}.csv"
     end
   end
   def delete_processed
@@ -55,6 +55,7 @@ class PdfProcess::Process
   def convert_to_record
     trimester_number=0
     @career_name[1].gsub!(/(\'|\"|\.|\*|\/|\-|\\|\)|\$|\+|\(|\^|\?|\!|\~|\`)/,"").downcase!
+    p @career_name
     career=Career.find_by(code: "#{career_name[1]}") || Career.create(name: "#{career_name[0]}", code:"#{career_name[1]}" )
     p career
     career.career_subjects.all.each{|cs| cs.delete}

@@ -1,8 +1,8 @@
 == bootstrap_form_for(@user) do |f|
   == f.form_group :subject_ids, label: { text: "Subjects:\t\t" } do
     br
-    - @user.career.pensum each do |value|
-      == f.check_box: subject_ids value,label: "#{value}", inline: true
+    - @user.career.pensum.each do |value|
+      == check_box_tag "subject_id[]",value.id,label: "#{value.name}"
   == f.submit "Create my account", class: "btn btn-large btn-danger"
 
 

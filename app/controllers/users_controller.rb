@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       sign_in @user
       redirect_to signup_step2_path, success: 'Welcome to Bilden App!'
     else
-      redirect_to 'new', errors
+      redirect_to users_new_path, errors: @user.errors
     end
 
   end
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career_code, :extra_credits)
+      params.require(:user).permit(:first_name,:last_name, :email, :password, :password_confirmation,:career_id, :extra_credits)
 
     end
 end
