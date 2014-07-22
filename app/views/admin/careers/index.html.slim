@@ -1,0 +1,20 @@
+h1 Listing Career
+div class="row"
+  div class="col-md-11"
+    table class="table table-bordered"
+      thead
+        tr
+          th Name
+          th Code
+          th colspan="3"
+      tbody
+      - @careers.each do |career|
+        tr
+          td == career.name
+          td == career.code
+          td == link_to 'Show', admin_career_path(career)
+          td == link_to 'Edit', new_admin_career_path
+          td == link_to 'Destroy', career, method: :delete, data: { confirm: 'Are you sure?' }
+br
+center
+  == link_to 'New Career', new_upload_path,class:"btn btn-default btn-lg"

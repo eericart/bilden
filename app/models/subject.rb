@@ -3,4 +3,8 @@ class Subject < ActiveRecord::Base
   belongs_to :career,:dependent => :destroy
   has_and_belongs_to_many :users
   has_and_belongs_to_many :career_subjects
+
+  def prerequisite (career)
+
+  end
 end

@@ -63,12 +63,14 @@ class PdfProcess::Process
       if data.size == 1 and data[0].include? "TRIMESTRE"
         trimester_number+=1
       else
+        p data[0]
         subject=Subject.find_by(code: "#{data[0]}") || Subject.create(code: "#{data[0]}",name: "#{data[1]}",credits: data[2].to_i)
         cs=CareerSubject.new
         cs.career=career
         cs.subject=subject
         cs.credits_prerequisite=data[4].to_i
         cs.trimester_number=trimester_number
+        p data[3].split
         cs.subject_prerequisite=Subject.where(code:  data[3].split)
         cs.save
       end
