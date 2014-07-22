@@ -1,4 +1,12 @@
-Rails.application.routes.draw do
+
+  get 'records/show'
+
+  get 'records/index'
+
+  get 'records/update'
+
+  get 'records/edit'
+
   namespace :admin do
     resources :careers
   end
@@ -17,6 +25,10 @@ Rails.application.routes.draw do
   match '/dash-student', to: 'students#show',   via: 'get'
   match '/uploads/new', to: 'uploads#new', via:'post'
 
+  match '/signup/step2', to: 'users#record', via:'get'
+  match '/signup/step2', to: 'users#record', via:'post'
+
+  resources :records, only: [:index, :new, :create, :show]
   #Why cannot use
 
   # The priority is based upon order of creation: first created -> highest priority.

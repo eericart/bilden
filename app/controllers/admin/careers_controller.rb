@@ -1,7 +1,5 @@
 class Admin::CareersController < ApplicationController
   def index
-    @ca
-  end
   def new
   end
   def create

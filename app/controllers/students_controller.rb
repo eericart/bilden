@@ -19,7 +19,6 @@ class StudentsController < ApplicationController
       @student = User.find(params[:id])
       redirect_to(root_url) unless current_user? @student
     end
-
     def admin_sign_in
       redirect_to root_path if current_user.admin?
     end

@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140721184134) do
+=======
+ActiveRecord::Schema.define(version: 20140721223520) do
+>>>>>>> f189238e250b5ab3b490651072f6822771e78e3b
 
   create_table "career_subjects", force: true do |t|
     t.integer  "career_id"
@@ -51,6 +55,10 @@ ActiveRecord::Schema.define(version: 20140721184134) do
   create_table "subjects_users", id: false, force: true do |t|
     t.integer "subject_id"
     t.integer "user_id"
+<<<<<<< HEAD
+=======
+    t.boolean "status"
+>>>>>>> f189238e250b5ab3b490651072f6822771e78e3b
   end
 
   create_table "uploads", force: true do |t|
@@ -64,7 +72,11 @@ ActiveRecord::Schema.define(version: 20140721184134) do
     t.string   "last_name"
     t.string   "email"
     t.string   "type"
+<<<<<<< HEAD
     t.string   "career_code"
+=======
+    t.integer  "career_id"
+>>>>>>> f189238e250b5ab3b490651072f6822771e78e3b
     t.integer  "extra_credits"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -72,6 +84,10 @@ ActiveRecord::Schema.define(version: 20140721184134) do
     t.string   "password_digest"
   end
 
+<<<<<<< HEAD
+=======
+  add_index "users", ["career_id"], name: "index_users_on_career_id"
+>>>>>>> f189238e250b5ab3b490651072f6822771e78e3b
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 

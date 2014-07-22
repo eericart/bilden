@@ -26,7 +26,7 @@ class PdfProcess::Process
 
   def convert_to_csv
     (1..2).each do |index|
-      system "jruby /opt/jruby/bin/tabula #{attachment_pdf.attachment.current_path} -p #{index} -o lib/pdf_process/csv/#{index}.csv"
+      %x(bash -c 'jruby /opt/jruby/bin/tabula /public/uploads/pdf/attachment/005-carreras_y_programas_ingenieria_civil.pdf -p -#{index}-o lib/pdf_process/csv/#{index}.csv' )
     end
   end
   def delete_processed

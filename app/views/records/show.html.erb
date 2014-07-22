@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Subjects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pensum</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @career.career_subject.each do |career| %>
+      <tr>
+        <td><%= career.subject %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

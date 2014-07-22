@@ -5,7 +5,7 @@
   == f.password_field :password
   == f.password_field :password_confirmation, label: "Confirmation"
   == f.form_group :career_code do
-    == f.select :career_code, options_from_collection_for_select(Career.all, :code, :name)
+    == f.select :career_id, options_from_collection_for_select(Career.all, :id, :name)
   == f.form_group :extra_credits, label: { text: "Extra Credits:\t\t" } do
     br
     - (0..2).each do |value|
